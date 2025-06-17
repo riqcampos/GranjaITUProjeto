@@ -1,0 +1,59 @@
+/*Importing fonts used*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+/*HTML and Body definitions*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/*Menu CSS*/
+header{
+    display: flex;
+}
+.menu{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#logo{
+    width: 10%;
+    height: 100%;
+}
+
+.menuItems{
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemMenu{
+    width: 20%;
+    display: inline;
+    font-size: 1.5em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+.Amenu{
+    text-decoration: none;
+    color: #FB7500;
+    transition: 0.2s ease;
+}
+
+/*Animações e transicoes para o MENU*/
+.Amenu:hover{
+    color: #ffd4ae;
+}
+
+/*Main CSS*/
+/*Culture CSS*/
+/*Products CSS*/
+/*History CSS*/
+/*Carousel CSS*/
+/*Contact CSS*/

@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja - ITU</title>
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="./images/mainStructure/iconeSiteGalinhas.png" type="image/x-icon">
 </head>
 <body>
 <!--    
     Header development
 -->
+    <image src="./images/mainStructure/startingBackground.jpeg">
+    <image src="./images/mainStructure/productsBackground.jpeg">
     <header>
         <div class="menu">
+            <image src="./images/mainStructure/telaMainOnda.svg" id="wave">
             <image src="./images/mainStructure/logo.png" alt="Granja ITU Logo" id="logo">
             <ul class="MenuItens" id="menu">
-                <li><a href="#mainPage">HOME</a></li>
-                <li><a href="#products">PRODUTOS</a></li>
-                <li><a href="#ourHistory">HISTORIA</a></li>
-                <li><a href="#contact">CONTATO</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#mainPage">HOME</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#products">PRODUTOS</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#ourHistory">HISTORIA</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#contact">CONTATO</a></li>
             </ul>
         </div>
     </header>
@@ -50,7 +53,10 @@
         <div class="squareculture"></div>
         <div class="content">
             <div class="eggstory">
-
+                <image src="./images/storyTelling/galinhaCorrendo.png">
+                <image src="./images/storyTelling/ovoInteiroCaipira.png">
+                <image src="./images/storyTelling/ovoInteiroCaipira.png">    
+                <image src="./images/storyTelling/ovoAberto.png">
             </div>
             <div class="text">
                 <h2 id="cultureTitleUp">Nossos</h2>
@@ -67,7 +73,7 @@
     -->
     <div class="products">
         <div class="productsContent">
-            <image src="">
+            <image src="./images/products/product601.png" alt="Product Image" class="productImage" height="300px" width="300px">
             <div class="selos">
                 <image src="">
                 <image src="">
@@ -121,15 +127,15 @@
     --> 
     <div class="contact">
         <div class="contactContent">
-            <form>
+            <form target="_blank" action="https://formsubmit.co/cesarhrccontato@gmail.com" method="POST" class="from">
                 <label for="name">Nome *</label>
-                <input type="text" name="" id="name" placeholder="Nome" class="normalInput">
+                <input type="text" name="" id="name" placeholder="Nome" class="form-control">
                 <label for="name">Email *</label>
-                <input type="email" name="" id="email" placeholder="Email" class="normalInput">
-                <label for="Empresa">Empresa</label>
-                <input type="text" name="" id="empresa" placeholder="Empresa" class="normalInput">
-                <label for="Mensagem">Mensagem *</label>
-                <input type="text" name="" id="message" placeholder="Mensagem" class="messageInput">
+                <input type="email" name="" id="email" placeholder="Email" class="form-control"><br>
+                <label for="Empresa">Empresa</label><br>
+                <input type="text" name="" id="empresa" placeholder="Empresa"class="form-control"><br>
+                <label for="Mensagem">Mensagem *</label><br>
+                <input type="text" name="" id="message" placeholder="Mensagem" class="form-control"><br>
                 <button type="submit" id="submit">Enviar</button>
             </form>
             <div class="informations">
