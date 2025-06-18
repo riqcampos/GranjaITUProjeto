@@ -2,58 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
-/*HTML and Body definitions*/
+/*------------------------------------HTML and Body definitions--------------------------------*/
+
 html, body{
     margin: 0;
     padding: 0;
 }
-/*Menu CSS*/
+
+/*-------------------------------------------Background---------------------------------------*/
+
+.backgroundImages{
+    position: relative;
+    width: 100%;
+}
+
+/*-------------------------------------------Menu CSS-----------------------------------------*/
+
 header{
     display: flex;
+    position: inherit;
 }
+
 .menu{
     width: 100%;
-    height: 20%;
     display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 #logo{
-    width: 10%;
-    height: 100%;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 2%;
+    position: absolute;
+    display: flex;
+    z-index: 0;
 }
 
-.menuItems{
-    width: 90%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+#wave{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.menuItens{
+    position: absolute;
+    text-decoration: none;
+    left: 55%;
+    margin-top: 4%;
 }
 
 .itemMenu{
-    width: 20%;
-    display: inline;
-    font-size: 1.5em;
+    display: inline-block;
+    font-size: 1.8em;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    border-radius: 5px;
-    margin-right: 10%;
     text-decoration: none;
+    z-index: 1;
 }
 
 .Amenu{
+    margin-right: 2em;
     text-decoration: none;
     color: #FB7500;
     transition: 0.2s ease;
 }
 
-/*Animações e transicoes para o MENU*/
+
+/*-------------------------------------------Menu Animation CSS-----------------------------------------*/
+
 .Amenu:hover{
     color: #ffd4ae;
 }
 
 /*Main CSS*/
+/*Animações e transicoes para o Main*/
 /*Culture CSS*/
+/*Animações e transicoes para o Culture*/
 /*Products CSS*/
+/*Animações e transicoes para o Products*/
 /*History CSS*/
+/*Animações e transicoes para o OurHistory*/
 /*Carousel CSS*/
+/*Animações e transicoes para o Carousel*/
 /*Contact CSS*/
+/*Animações e transicoes para o Contact*/
