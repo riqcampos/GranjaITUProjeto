@@ -11,12 +11,12 @@
 <!--    
     Header development
 -->
-    <image src="./images/mainStructure/back.svg" class="backgroundImages">
-    <image src="./images/mainStructure/productsBackground.jpeg" class="backgroundImages">  
+    <image src="./images/mainStructure/startingBackground.svg" class="backgroundImages">
+    <image src="./images/mainStructure/productsBackground.svg" class="backgroundImages" id="productsBackground">  
     <header>
         <div class="menu">
             <image src="./images/mainStructure/telaMainOnda.svg" id="wave">
-            <image src="./images/mainStructure/logo.png" alt="Granja ITU Logo" id="logo">
+            <image src="./images/mainStructure/logo.svg" alt="Granja ITU Logo" id="logo">
             <ul class="menuItens" id="menu">
                 <li class="itemMenu"><a class="Amenu" href="#mainPage">HOME</a></li>
                 <li class="itemMenu"><a class="Amenu" href="#products">PRODUTOS</a></li>
@@ -39,7 +39,7 @@
             <h1 class="text3Main">FELIZ</h1>
             <div class="squaremain"></div>
         </div>
-        <a href="#contact"><button type="button">Entre em contato</button></a>
+        <a href="#contact" class="contactMainButton">Entre em contato</a>
     </div>
 
 
@@ -50,13 +50,15 @@
         Culture values will be dynamically composed in javascript
     -->
     <div id="cultureNvalues">
+        <image src="./images/mainStructure/telaCulturaOnda.svg" class="waveCulture">
         <div class="squareculture"></div>
         <div class="content">
             <div class="eggstory">
-                <image src="./images/storyTelling/galinhaCorrendo.png">
-                <image src="./images/storyTelling/ovoInteiroCaipira.png">
-                <image src="./images/storyTelling/ovoInteiroCaipira.png">    
-                <image src="./images/storyTelling/ovoAberto.png">
+                <image src="./images/storyTelling/galinhaCorrendo.png" id="chickenRunning" class="imageCulture">
+                <image src="./images/storyTelling/ovoInteiroCaipira.png" id="fullEgg1" class="imageCulture">
+                <image src="./images/storyTelling/ovoInteiroCaipira.png" id="fullEgg2" class="imageCulture"> 
+                <image src="./images/storyTelling/ovoInteiroCaipira.png" id="fullEgg3" class="imageCulture">    
+                <image src="./images/storyTelling/ovoAberto.png"  id="openEgg" class="imageCulture">
             </div>
             <div class="text">
                 <h2 id="cultureTitleUp">Nossos</h2>
@@ -66,22 +68,6 @@
         </div>
     </div>
 
-
-
-    <!--
-        Products page
-    -->
-    <div class="products">
-        <div class="productsContent">
-            <image src="./images/products/product601.png" alt="Product Image" class="productImage" height="300px" width="300px">
-            <div class="selos">
-                <image src="">
-                <image src="">
-            </div>
-        </div>
-    </div>
-
-
     <!--
         Coworkers page division
 
@@ -89,7 +75,29 @@
     -->
     <div class="coworkers"></div>
 
-
+    <!--
+        Products page
+    -->
+    <div class="products">
+        <div class="productsContent">
+            <image src="./images/mainStructure/telaProdutosOnda.svg" class="waveProducts">
+            <h1 class="titleProducts">Ovos</h1>
+            <h2 class="subtitleProducts">CAIPIRAS</h2>
+            <div class="productSelection">
+                <ul class="productList">
+                    <li class="curentProduct" id="06">06</li>
+                    <li class="productItem" id="10">10</li>
+                    <li class="productItem" id="12">12</li>
+                    <li class="productItem" id="20">20</li>
+                </ul>
+            </div>
+            <image src="./images/products/product601.png" alt="Product Image" class="productSelected" height="300px" width="300px">
+            <div class="selos">
+                <image src="">
+                <image src="">
+            </div>
+        </div>
+    </div>
 
     <!--
         Our story page
@@ -127,6 +135,8 @@
     --> 
     <div class="contact">
         <div class="contactContent">
+            <h1 class="contactTitle">Contato</h1>
+            <h2 class="contactSubtitle">Fale conosco</h2>
             <form target="_blank" action="https://formsubmit.co/cesarhrccontato@gmail.com" method="POST" class="from">
                 <label for="name">Nome *</label>
                 <input type="text" name="" id="name" placeholder="Nome" class="form-control">
