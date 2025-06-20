@@ -301,7 +301,7 @@ header{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.8s ease;
 }
 
 .productItem{
@@ -319,7 +319,7 @@ header{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.8s ease;
 }
 
 /*------------------------------Animações e transicoes para o Products----------------------------------*/
@@ -335,7 +335,45 @@ header{
 
 /*-------------------------------------------History CSS------------------------------------------------*/
 
+#ourHistoryTitleUp{
+    position: absolute;
+    color: #FF7000;
+    font-family: 'Galada', cursive;
+    font-weight: 200;
+    font-size: 4em;
+    text-shadow: 
+        4px 4px 0px #FFFFFF;
+    top: 380%;
+    left: 5%;
+}
 
+#ourHistoryTitleDown{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: Bolder;
+    font-size: 6em;
+    top: 387%;
+    left: 10%;
+}
+
+.waveOurHistory{
+    position: absolute;
+    width: 100%;
+    top: 395%;
+    z-index: 1;
+}
+
+.imagesOurHistory{
+    position: absolute;
+    border: #FFFFFF solid 0.8em;
+    border-radius: 5%;
+    height: 90%;
+    top: 410%;
+    left: 5%;
+    z-index: 2;
+    background-color: #fd9f4d;
+}
 /*------------------------------Animações e transicoes para o OurHistory--------------------------------*/
 
 
@@ -344,10 +382,31 @@ header{
 
 .text1Granja{
     position: absolute;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: Bolder;
+    font-size: 3em;
+    color: #FFFFFF;
+    top: 510%;
+    left: 10%;
+    z-index: 2;
 }
 
 .text2Granja{
     position: absolute;
+    font-family: 'Galada', cursive;
+    font-weight: 200;
+    font-size: 10em;
+    color: #FF7700;
+    top: 495%;
+    left: 5%;
+    z-index: 2;
+}
+
+.imagesCarrousel{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 510%;
 }
 
 /*------------------------------Animações e transicoes para o Carousel----------------------------------*/
@@ -356,24 +415,132 @@ header{
 
 /*-------------------------------------------Contact CSS------------------------------------------------*/
 
+.contactContent{
+    position: absolute;
+    top: 665%;
+    width: 100%;
+}
+
 .contactTitle{
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 8em;
     color: #FF7700;
     position: absolute;
-    top: 350%;
-    left: 10%;
+    left: 15%;
 }
 
 .contactSubtitle{
-    position: absolute;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 2.5em;
     color: #000000;
-    top: 370%;
-    left: 17%;
+    position: absolute;
+    top: 125%;
+    left: 23%
+}
+
+.form{
+    label{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #777777;
+        position: absolute;
+    }
+    input{
+        text-decoration: none;
+        border: none;
+        background-color: #E8E8E8;
+        font-size: medium;
+        font-weight: 500;
+        font-family: 'Fira Sans', sans-serif;
+        padding: 1em;
+        border-radius: 1em;
+        position: absolute;
+    }
+    button{
+        text-decoration: none;
+        border: none;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        width: 15%;
+        background-color: #FB7500;
+        color: #FFFFFF;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 1.5em;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.5s ease;
+        position: absolute;
+        top: 500%; 
+        left: 14%;
+    }
+    button:hover{
+        background-color: #ffd4ae;
+        color: #FB7500;
+        transform: scale(1.03);
+    }
+}
+
+#labelName{
+    top: 200%;
+    left: 15%
+}
+
+#name{
+    top: 220%;
+    left: 14%;
+    width: 20%;
+}
+
+#labelEmail{
+    top: 200%;
+    left: 40%
+}
+
+#email{
+    top: 220%;
+    left: 39%;
+    width: 20%;
+}
+
+#labelEmpresa{
+    top: 260%;
+    left: 15%
+}
+
+#empresa{
+    top: 280%;
+    left: 14%;
+    width: 45%;
+}
+
+#labelMensagem{
+    top: 320%;
+    left: 15%
+}
+
+#mensagem{
+    top: 340%;
+    left: 14%;
+    width: 45%;
+    height: 100%;
+}
+
+.informations{
+    position: absolute;
+    top: 180%;
+    left: 65%;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 /*-------------------------------Animações e transicoes para o Contact----------------------------------*/
+
+/*--------------------------------------------Footer CSS------------------------------------------------*/
+
+/*-------------------------------Animações e transicoes para o Footer-----------------------------------*/
