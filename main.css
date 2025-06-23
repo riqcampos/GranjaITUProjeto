@@ -47,7 +47,6 @@ header{
 #wave{
     position: absolute;
     width: 100%;
-    top: 200;
     z-index: -1;
 }
 
@@ -67,7 +66,7 @@ header{
 }
 
 .Amenu{
-    font-size: 1.8em;
+    font-size: 180%;
     margin-left: 3em;
     text-decoration: none;
     color: #ff7000;
@@ -81,16 +80,14 @@ header{
     color: #FFd4ae;
     text-shadow: 
         4px 4px 0px #FF7000;
-    font-size: 1.7em;
-    margin-right: 0.33em;
+    font-size: 175%;
 }
-
 /*-------------------------------------------Main CSS---------------------------------------------------*/
 
 .text1Main{
     color: #FFFFFF;
     font-family: 'Galada', cursive;
-    font-size: 5.5em;
+    font-size: 600%;
     position: absolute;
     top: 40%;
     left: 11%;
@@ -101,7 +98,7 @@ header{
     color:#FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
-    font-size: 5.5em;
+    font-size: 550%;
     position:absolute;
     top: 52%;
     left: 11%;
@@ -110,7 +107,7 @@ header{
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
-    font-size: 16em;
+    font-size: 1600%;
     position: absolute;
     top: 26%;
     left: 30%;
@@ -544,3 +541,4 @@ header{
 /*--------------------------------------------Footer CSS------------------------------------------------*/
 
 /*-------------------------------Animações e transicoes para o Footer-----------------------------------*/
+
