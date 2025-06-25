@@ -256,7 +256,7 @@ header{
 /*------------------------------------------Coworkers CSS------------------------------------------------*/
 
 .coworkers{
-    background-color: #fa9236;
+    background:linear-gradient(#FF7000, #FF9C45);
     position: absolute;
     width: 100%;
     height: 25%;
@@ -566,6 +566,10 @@ header{
         padding: 1em;
         border-radius: 1em;
         position: absolute;
+        outline: none;
+    }
+    input:focus {
+        border: #FF7000 solid, 0.15em;
     }
     button{
         text-decoration: none;
@@ -651,5 +655,84 @@ header{
 
 /*--------------------------------------------Footer CSS------------------------------------------------*/
 
-/*-------------------------------Animações e transicoes para o Footer-----------------------------------*/
+footer{
+    background-image: url(./images/mainStructure/backgroundFooter.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 720%;
+}
 
+.blackBackground{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dividedPart{
+    display: inline-flex;
+    z-index: 10;
+}
+
+.footerPart1{
+    margin-left: 20%;
+    width: 20%;
+    img{
+        width: 100%;
+    }
+    p{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bolder;
+        color: #FFFFFF;
+        font-size: 1em;
+    }
+}
+
+.linksFooter{
+    margin-top: 1%;
+    margin-left: 10%;
+    n{
+        font-family: 'Galada', cursive;
+        font-weight: 200;
+        font-size: 4em;
+        color: #FF7000;
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}
+.contatoFooter{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    p{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        color: #FFFFFF;
+    }
+    n{
+        font-family: 'Galada', cursive;
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: #FF7000;
+    }
+}
+
+.textFooter{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+/*-------------------------------Animações e transicoes para o Footer-----------------------------------*/
