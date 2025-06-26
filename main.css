@@ -95,7 +95,7 @@ header{
     top: 40%;
     left: 11%;
     text-shadow: 
-        5px 5px 0px #FF7000
+        3px 3px 0px #FF7000
 }
 .text2Main{
     color:#FFFFFF;
@@ -224,7 +224,7 @@ header{
 #values{
     position: absolute;
     top: 160%;
-    left: 60%;
+    left: 55%;
     margin-right: 10%;
 }
 
@@ -245,8 +245,20 @@ header{
     letter-spacing: 105%;
     margin-top: -5%;
     margin-bottom: 5%;
-    margin-left: 5%;
     text-align: justify;
+}
+
+.particionCulture{
+    display: flex;
+}
+
+.iconCulture{
+    margin: 2%;
+    margin-top: 5%;
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    border: #FF7700 solid 0.3em;
 }
 
 /*------------------------------Animações e transicoes para o Culture-----------------------------------*/
@@ -262,6 +274,44 @@ header{
     height: 25%;
     top: 250%;
     z-index: 2;
+    overflow: hidden;
+    li{
+        margin-left: 20%;
+    } 
+}
+
+.coworkersList{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 2%
+}
+
+.coworkerImage{
+    border-radius: 30%;
+    transition: ease-in-out 0.5s;
+    width: 10em;
+    height: 10em;
+}
+
+#Caetano, #Fartura, #Dalben{
+    border-radius: 0%;
+    width: auto;
+    height: auto;
+}
+
+#Pagmenos{
+    width: 10em;
+    border-radius: 10%;
+    border: #E8E8E8 solid 0.1em;
+}
+
+/*--------------------------------Animações e transições Coworkers CSS----------------------------------*/
+
+.coworkerImage:hover{
+    transform: scale(1.02);
 }
 
 /*------------------------------------------Products CSS------------------------------------------------*/
@@ -358,13 +408,10 @@ header{
 }
 
 .cardProducts{
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 3%;
     margin-bottom: 5%;
     border-radius: 2em;
     display: inline-flex;
-    box-shadow: 
-        0.4em 0.4em 0px #FF7000;
     cursor: pointer;
     transition: 0.8s ease;
 }
@@ -487,39 +534,74 @@ header{
 
 /*------------------------------------------Carousel CSS------------------------------------------------*/
 
-.text1Granja{
+.ourGranja{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 515%;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.text1Granja{
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
     font-size: 3em;
-    color: #FFFFFF;
-    top: 510%;
-    left: 10%;
-    z-index: 2;
+    color: #ffffff;
+    margin-left: 10%;
+    z-index: 3;
+    position: absolute;
 }
 
 .text2Granja{
-    position: absolute;
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 10em;
     color: #FF7700;
-    top: 495%;
-    left: 5%;
-    z-index: 2;
+    z-index: 3;
+    margin-left: 5%;
+    margin-top: 1%;
+    position: absolute;
+}
+
+.carrouselDimentions{
+    display: flex;
+    width: 100%;
 }
 
 .imagesCarrousel{
+    width: 100%;
+}
+
+.imageCarrousel{
+    width: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.buttonCarrousel{
     position: absolute;
-    z-index: 1;
-    height: auto;
-    width: 100% ;
-    top: 510%;
+    height: 3em;
+    transition: 0.5s ease;
+}
+
+#LeftBtn{
+    margin-top: 22%;
+    margin-left: 1%;
+}
+
+#RightBtn{
+    margin-left: 96%;
+    margin-top: 22%; 
+    rotate: 180deg
 }
 
 /*------------------------------Animações e transicoes para o Carousel----------------------------------*/
 
-
+.buttonCarrousel:hover{
+    transform: scale(1.1);
+}
 
 /*-------------------------------------------Contact CSS------------------------------------------------*/
 
@@ -692,12 +774,12 @@ footer{
 }
 
 .linksFooter{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 10%;
     n{
         font-family: 'Galada', cursive;
         font-weight: 200;
-        font-size: 4em;
+        font-size: 3em;
         color: #FF7000;
     }
     a{
