@@ -566,14 +566,6 @@ header{
     to { transform: translateX(-50%); }
 }
 
-.ourGranja{
-    position: absolute;
-    width: 100%;
-    height: 101%;
-    top: 515%;
-    overflow: hidden;
-}
-
 .text1Granja{
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
@@ -600,36 +592,54 @@ header{
     width: 100%;
 }
 
-.imagesCarrousel{
+.ourGranja {
+    position: absolute;
     width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    height: 101%;
+    top: 515%;
 }
 
-.imageCarrousel{
+/* Adicionamos um wrapper para esconder o conteúdo extra */
+.imagesCarrouselWrapper {
     width: 100%;
-    flex: 1 0 100%;
-    scroll-snap-align: start;
+    height: 101%;
+    overflow: hidden; /* Esconde as imagens que estão fora da tela */
+    position: absolute; /* Garante que ele se sobreponha corretamente */
+    top: 0;
+    left: 0;
 }
 
-.buttonCarrousel{
+.imagesCarrousel {
+    display: flex; /* Mantém as imagens em linha */
+    width: 100%;
+    /* A transição será adicionada via JS para melhor controle */
+}
+
+.imageCarrousel {
+    min-width: 100%; /* Garante que cada imagem ocupe todo o espaço */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+/* Ajustes nos botões para ficarem acima de tudo */
+.buttonCarrousel {
     position: absolute;
     height: 3em;
     transition: 0.5s ease;
+    z-index: 10; /* Garante que os botões fiquem na frente */
+    cursor: pointer;
 }
 
-#LeftBtn{
+#LeftBtn {
     margin-top: 22%;
     margin-left: 1%;
 }
 
-#RightBtn{
+#RightBtn {
     margin-left: 96%;
-    margin-top: 22%; 
-    rotate: 180deg
+    margin-top: 22%;
+    rotate: 180deg;
 }
+
 
 /*------------------------------Animações e transicoes para o Carousel----------------------------------*/
 
