@@ -9,17 +9,6 @@ html, body{
     padding: 0;
 }
 
-/*-------------------------------------------Background---------------------------------------*/
-
-.backgroundImages{
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-#productsBackground{
-    margin-top: 65%;
-}
-
 /*-------------------------------------------Menu CSS-----------------------------------------*/
 
 header{
@@ -30,7 +19,6 @@ header{
 .menu{
     width: 100%;
     display: flex;
-    position: absolute;
     top: 0;
     z-index: 1;
 }
@@ -39,7 +27,6 @@ header{
     width: 18%;
     margin-left: 6%;
     margin-top: 1%;
-    position: absolute;
     display: flex;
     z-index: 0;
     transition: 0.3s ease-in-out;
@@ -54,7 +41,7 @@ header{
 .menuItens{
     position: absolute;
     text-decoration: none;
-    left: 50%;
+    margin-left: 55%;
     margin-top: 6%;
 }
 
@@ -68,7 +55,7 @@ header{
 
 .Amenu{
     font-size: 180%;
-    margin-left: 3em;
+    margin-left: 3rem;
     text-decoration: none;
     color: #ff7000;
     transition: 0.5s ease;
@@ -88,67 +75,81 @@ header{
 }
 
 /*-------------------------------------------Main CSS---------------------------------------------------*/
+#mainPage{
+    background-image: url(./images/mainStructure/startingBackground.svg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85em;
+    margin-top: -15%;
+}
+
+.centerSection{
+    display: flex;
+    margin-left: 10%;
+}
+
+.textDireita{
+    margin-top: 20%;    
+}
 
 .text1Main{
     color: #FFFFFF;
     font-family: 'Galada', cursive;
-    font-size: 600%;
-    position: absolute;
-    top: 40%;
-    left: 11%;
+    font-size: 6em;
     text-shadow: 
-        3px 3px 0px #FF7000
+        3px 3px 0px #FF7000;
+    align-items: center;
 }
+
 .text2Main{
     color:#FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
     font-size: 550%;
-    position:absolute;
-    top: 52%;
-    left: 11%;
+    margin-top: -40%;
+    align-items: center;
 }
+
 .text3Main{
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
     font-size: 1600%;
-    position: absolute;
-    top: 26%;
-    left: 30%;
+    margin-top: 23%;
+    margin-left: 2%;
 }
 .squaremain{
-    position: absolute;
-    width: 52%;
+    width: 55%;
     height: 1.5%;
-    top: 73%;
-    left: 11%;
     background-color: #FFFFFF;
-    z-index: 0;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: -12%;
+    margin-bottom: 2%;
 }
+
 .contactMainButton{
-    position: absolute;
     width: 14%;
     height: 5%;
-    top: 77%;
-    left: 14%;
     background-color: #FB7500;
+    margin-left: 10%;
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 200%;
     text-decoration: none;
-    text-align: center;
-    padding-top: 0.7%;
+    padding: 1%;
     border-radius: 1em;
     border: none;
-    cursor: pointer;
     transition: 0.5s ease;
+    margin-left: 10%;
 }
 .contactMainButton:hover{
     background-color: #ffd4ae;
     color: #FB7500;
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 
 /*---------------------------------------Main Animation CSS---------------------------------------------*/
@@ -449,9 +450,9 @@ header{
 }
 
 .titleProductsText{ 
-    font-family: 'Galada', cursive;
-    font-weight: 200;
-    font-size: 1.8em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.4em;
     color: #ff6f0000;
     transition: 0.5s ease-in-out;
     margin-left: 2%;
@@ -464,7 +465,7 @@ header{
     color: #582d0900;
     line-height: 120%;
     letter-spacing: 105%;
-    margin-top: -5%;
+    margin-top: -3%;
     margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -485,7 +486,7 @@ header{
 }
 
 .productSelected:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .cardProducts:hover{
@@ -495,7 +496,7 @@ header{
         border-radius: 1em;
         padding: 1%;
         box-shadow: 
-            0.3em 0.3em 0px #F97316;
+            0.5em 0.5em 0.1em #0000005d;
         .titleProductsText{
             color: #FF7700;
         }
@@ -552,7 +553,7 @@ header{
 
 .textOurHistory{
     position: absolute;
-    top: 420%;
+    top: 430%;
     left: 45%;
     margin-right: 10%;
     z-index: 2;
@@ -561,7 +562,7 @@ header{
 .textForOurHistory{
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1.3em;
+    font-size: 1.25em;
     color: #582d09;
     text-align: justify;
     line-height: 120%;
@@ -620,33 +621,30 @@ header{
     top: 515%;
 }
 
-/* Adicionamos um wrapper para esconder o conteúdo extra */
 .imagesCarrouselWrapper {
     width: 100%;
     height: 101%;
-    overflow: hidden; /* Esconde as imagens que estão fora da tela */
-    position: absolute; /* Garante que ele se sobreponha corretamente */
+    overflow: hidden;
+    position: absolute;
     top: 0;
     left: 0;
 }
 
 .imagesCarrousel {
-    display: flex; /* Mantém as imagens em linha */
+    display: flex;
     width: 100%;
-    /* A transição será adicionada via JS para melhor controle */
 }
 
 .imageCarrousel {
-    min-width: 100%; /* Garante que cada imagem ocupe todo o espaço */
-    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+    min-width: 100%;
+    object-fit: cover;
 }
 
-/* Ajustes nos botões para ficarem acima de tudo */
 .buttonCarrousel {
     position: absolute;
     height: 3em;
     transition: 0.5s ease;
-    z-index: 10; /* Garante que os botões fiquem na frente */
+    z-index: 10;
     cursor: pointer;
 }
 
@@ -886,11 +884,13 @@ footer{
     margin-top: 2%;
     margin-left: 10%;
 }
-.linksFooter n{
-    font-family: 'Galada', cursive;
-    font-weight: 200;
-    font-size: 3em;
-    color: #FF7000;
+.linksFooter {
+    strong{
+        font-family: 'Galada', cursive;
+        font-weight: 200;
+        font-size: 3em;
+         color: #FF7000;
+    }
 }
 .linksFooter a{
     text-decoration: none;
@@ -911,7 +911,7 @@ footer{
     font-size: 1.5em;
     color: #FFFFFF;
 }
-.contatoFooter n{
+.contatoFooter strong{
     font-family: 'Galada', cursive;
     font-weight: bolder;
     font-size: 1.5em;

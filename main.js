@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productId = clickedItem.id;
                 productImage.src = `./images/products/${productId}-1.png`;
                 productImage.alt = `Embalagem com ${productId} ovos`;
+                productImage.id = `img${productId}`
 
                 // Remove a classe para iniciar a animação de "entrada"
                 productImage.classList.remove('product-changing');
