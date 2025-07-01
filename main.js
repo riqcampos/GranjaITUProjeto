@@ -13,6 +13,49 @@ document.addEventListener('DOMContentLoaded', function() {
         coworkersList.style.animation = 'infiniteScroll 20s linear infinite';
     }
 
+    //------------------------------------------Product Selection Logic------------------------------------------------//
+    const productList = document.querySelector('.productList');
+    const productImage = document.querySelector('.productSelected');
+
+    if (productList && productImage) {
+        productList.addEventListener('click', function(event) {
+            // Usamos delegação de eventos para melhor performance
+            const clickedItem = event.target.closest('li');
+
+            // Se o clique não foi em um 'li' ou já é o item atual, não faz nada
+            if (!clickedItem || clickedItem.classList.contains('curentProduct')) {
+                return;
+            }
+
+            // Animação de "saída" do produto
+            productImage.classList.add('product-changing');
+
+            // Espera a animação de saída terminar para trocar a imagem
+            setTimeout(() => {
+                // Atualiza a imagem e o texto alternativo
+                const productId = clickedItem.id;
+                productImage.src = `./images/products/${productId}-1.png`;
+                productImage.alt = `Embalagem com ${productId} ovos`;
+
+                // Remove a classe para iniciar a animação de "entrada"
+                productImage.classList.remove('product-changing');
+            }, 500); // A duração deve ser a mesma da transição no CSS
+
+            // Encontra o item atualmente ativo e o desativa
+            const currentActive = productList.querySelector('.curentProduct');
+            if (currentActive) {
+                currentActive.classList.remove('curentProduct');
+                currentActive.classList.add('productItem');
+            }
+
+            // Ativa o item clicado
+            clickedItem.classList.add('curentProduct');
+            clickedItem.classList.remove('productItem');
+
+        });
+    }
+
+
 
     //------------------------------------------Main Image Carousel Logic------------------------------------------------//
 

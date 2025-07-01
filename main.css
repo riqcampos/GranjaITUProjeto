@@ -360,9 +360,15 @@ header{
     left: 15%;
     width: 50vh;
     height: 50vh;
-    rotate: 15deg;
+    transform: rotate(15deg) scale(1);
     z-index: 3;
-    transition: 0.8s ease-in-out;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-changing {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0;
 }
 
 .productSelection{
@@ -513,7 +519,7 @@ header{
     font-size: 4em;
     text-shadow: 
         4px 4px 0px #FFFFFF;
-    top: -45%
+    top: -30%
 }
 
 #ourHistoryTitleDown{
@@ -523,7 +529,7 @@ header{
     font-weight: Bolder;
     font-size: 6em;
     margin-left: 5%;
-    top: -38%
+    top:-25%
 }
 
 .waveOurHistory{
@@ -546,7 +552,7 @@ header{
 
 .textOurHistory{
     position: absolute;
-    top: 435%;
+    top: 420%;
     left: 45%;
     margin-right: 10%;
     z-index: 2;
@@ -555,7 +561,7 @@ header{
 .textForOurHistory{
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #582d09;
     text-align: justify;
     line-height: 120%;
@@ -718,6 +724,26 @@ header{
 .form input:focus {
     border: #FF7000 solid, 0.15em;
 }
+
+.form textarea{
+    text-decoration: none;
+    border: none;
+    background-color: #E8E8E8;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 1em;
+    border-radius: 1em;
+    position: absolute;
+    outline: none;
+    resize: none;
+}
+
+.form textarea:focus {
+    border: #FF7000 solid, 0.15em;
+}
+
+
 .form button{
     text-decoration: none;
     border: none;
@@ -734,11 +760,6 @@ header{
     position: absolute;
     top: 500%; 
     left: 14%;
-}
-.form button:hover{
-    background-color: #ffd4ae;
-    color: #FB7500;
-    transform: scale(1.03);
 }
 
 #labelName{
@@ -814,6 +835,12 @@ header{
 
 .socialMidiaIcon:hover{
     transform: scale(1.1);
+}
+
+.form button:hover{
+    background-color: #ffd4ae;
+    color: #FB7500;
+    transform: scale(1.03);
 }
 
 /*--------------------------------------------Footer CSS------------------------------------------------*/
