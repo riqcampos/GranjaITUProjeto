@@ -17,8 +17,8 @@
             <img src="./images/mainStructure/logo.svg" alt="Granja ITU Logo" id="logo">
             <ul class="menuItens" id="menu">
                 <li class="itemMenu"><a class="Amenu" href="#mainPage">HOME</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#products">PRODUTOS</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#ourHistory">HISTORIA</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#jumpProducts">PRODUTOS</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#jumpOurStory">HISTORIA</a></li>
                 <li class="itemMenu"><a class="Amenu" href="#contact">CONTATO</a></li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
             </div>
             <h1 class="text3Main">FELIZ</h1>
         </div>
-        <div class="squaremain"></div>
+        <p class="squaremain"></p>
         <a href="#contact" class="contactMainButton">Entre em contato</a>
     </div>
 
@@ -51,8 +51,7 @@
     -->
     <div id="cultureValues">
         <img src="./images/mainStructure/telaCulturaOnda.svg" class="waveCulture" alt="">
-        <div class="squareculture"></div>
-        <div class="content">
+        <div class="contentCulture">
             <div class="eggstory">
                 <img src="./images/storyTelling/galinhaCorrendo.png" id="chickenRunning" class="imageCulture" alt="">
                 <img src="./images/storyTelling/ovoInteiroCaipira.png" id="fullEgg1" class="imageCulture" alt="">
@@ -60,7 +59,7 @@
                 <img src="./images/storyTelling/ovoInteiroCaipira.png" id="fullEgg3" class="imageCulture" alt="">    
                 <img src="./images/storyTelling/ovoAberto.png"  id="openEgg" class="imageCulture" alt="">
             </div>
-            <div class="text">
+            <div class="contentTextCulture">
                 <h2 id="cultureTitleUp">Nossa</h2>
                 <h1 id="cultureTitleDown">Cultura</h1>
                 <div id="values">
@@ -120,58 +119,62 @@
     <!--
         Products page
     -->
-    <div class="products">
+    <div id="products">
         <div class="productsContent">
             <img src="./images/mainStructure/telaProdutosOnda.svg" class="waveProducts" alt="">
-            <h1 class="titleProducts">Ovos</h1>
+            <h1 class="titleProducts" id="jumpProducts">Ovos</h1>
             <h2 class="subtitleProducts">CAIPIRAS</h2>
-            <div class="productSelection">
-                <ul class="productList">
-                    <li class="curentProduct" id="6">06</li>
-                    <li class="productItem" id="10">10</li>
-                    <li class="productItem" id="12">12</li>
-                    <li class="productItem" id="20">20</li>
-                </ul>
-            </div>
-            <img src="./images/products/6-1.png" alt="Embalagem com 06 ovos" class="productSelected" id="6">
-            <div class="selos">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div class="productsTextContent">
-                <div class="cardProducts">
-                    <section>
-                        <p class="titleProductsText">Criação ao Ar Livre com Alimentação Balanceada</p>
-                        <p class="textProducts">
-                            Nossas galinhas são criadas soltas no interior de São Paulo, em um ambiente tranquilo e cercado pela natureza. 
-                            A dieta delas é balanceada e a água é fresca e potável, sempre à vontade. Esse cuidado reflete diretamente na qualidade e no sabor dos ovos que chegam até você.
-                        </p>
-                    </section>
-                    <img src="./images/products/planta.svg" class="imageProducts">   
+            <div class="productsFullContent">
+                <div class="leftPartProducts">
+                    <div class="productSelection">
+                        <ul class="productList">
+                            <li class="curentProduct" id="6">06</li>
+                            <li class="productItem" id="10">10</li>
+                            <li class="productItem" id="12">12</li>
+                            <li class="productItem" id="20">20</li>
+                        </ul>
+                    </div>
+                    <img src="./images/products/6-1.png" alt="Embalagem com 06 ovos" class="productSelected" id="6">
+                    <div class="selos">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
                 </div>
-                <br>
-                <div class="cardProducts">
-                    <section>
-                        <p class="titleProductsText">Um Processo 100% Natural e sem Estresse</p>
-                        <p class="textProducts">
-                            Aqui, a natureza dita o ritmo. Nossas aves botam seus ovos em um ciclo natural, sem qualquer tipo de estresse. 
-                            O resultado são ovos totalmente saudáveis, produzidos com respeito e carinho, como deve ser.
-                        </p>
-                    </section>
-                    <img src="./images/products/casa.svg" class="imageProducts">
-                </div>
+                <div class="productsTextContent">
+                    <div class="cardProducts">
+                        <section>
+                            <p class="titleProductsText">Criação ao Ar Livre com Alimentação Balanceada</p>
+                            <p class="textProducts">
+                                Nossas galinhas são criadas soltas no interior de São Paulo, em um ambiente tranquilo e cercado pela natureza. 
+                                A dieta delas é balanceada e a água é fresca e potável, sempre à vontade. Esse cuidado reflete diretamente na qualidade e no sabor dos ovos que chegam até você.
+                            </p>
+                        </section>
+                        <img src="./images/products/planta.svg" class="imageProducts">   
+                    </div>
+                    <br>
+                    <div class="cardProducts">
+                        <section>
+                            <p class="titleProductsText">Um Processo 100% Natural e sem Estresse</p>
+                            <p class="textProducts">
+                                Aqui, a natureza dita o ritmo. Nossas aves botam seus ovos em um ciclo natural, sem qualquer tipo de estresse. 
+                                O resultado são ovos totalmente saudáveis, produzidos com respeito e carinho, como deve ser.
+                            </p>
+                        </section>
+                        <img src="./images/products/casa.svg" class="imageProducts">
+                    </div>
 
-                <div class="cardProducts">    
-                    <section>
-                        <p class="titleProductsText">Frescor que Sai da Granja Direto para a Sua Mesa</p>
-                        <p class="textProducts">
-                            Garantimos que nossos ovos cheguem à sua família sempre frescos. Cuidamos de todo o processo para que você receba um produto de qualidade superior, 
-                            com a certeza de estar consumindo o melhor que a nossa granja pode oferecer.
-                        </p>
-                    </section>
-                    <img src="./images/products/ar.svg" class="imageProducts">
+                    <div class="cardProducts">    
+                        <section>
+                            <p class="titleProductsText">Frescor que Sai da Granja Direto para a Sua Mesa</p>
+                            <p class="textProducts">
+                                Garantimos que nossos ovos cheguem à sua família sempre frescos. Cuidamos de todo o processo para que você receba um produto de qualidade superior, 
+                                com a certeza de estar consumindo o melhor que a nossa granja pode oferecer.
+                            </p>
+                        </section>
+                        <img src="./images/products/ar.svg" class="imageProducts">
+                    </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 
@@ -179,13 +182,15 @@
         Our story page
     -->
     <div id="ourStory">
+        <img src="./images/mainStructure/telaQuemSomosOnda.svg" class="waveOurHistory" alt="" id="jumpOurStory">
         <div class="ourStoryContent">
+            <img src="./images/ourStory/ourHistory1.jpeg" class="imagesOurHistory" alt="Foto histórica da granja">
             <div class="textOurHistory">
                 <div class="TitleOurStory">
                     <p id="ourHistoryTitleUp">Conheça Nossa</p>
                     <p id="ourHistoryTitleDown">HISTÓRIA</p>
                 </div>
-                <div class="textForOurHistory">
+                <div class="textConteinerOurHistory">
                     <p class="textForOurHistory">Com mais de 30 anos de experiência na avicultura, a Granja Itu nasceu no interior de São Paulo do desejo de fazer diferente. 
                     Desde o início, nosso propósito sempre foi claro: produzir ovos de altíssima qualidade, colocando o bem-estar das nossas aves em primeiro lugar. 
                     Fomos pioneiros na implementação do sistema <span class="specialTextHistory">"Galinhas Felizes"</span> , um método de criação ao ar livre que permite que as aves vivam de forma digna e natural.</p>
@@ -197,8 +202,6 @@
                     mirando uma demanda de consumidores preocupados com a origem dos alimentos e com o bem-estar das aves.</p>
                 </div>
             </div>
-            <img src="./images/ourStory/ourHistory1.jpeg" class="imagesOurHistory" alt="Foto histórica da granja">
-            <img src="./images/mainStructure/telaQuemSomosOnda.svg" class="waveOurHistory" alt="">
         </div>
     </div>
     <!--
@@ -210,7 +213,7 @@
     <!--
         Our granja page
     -->
-    <div class="ourGranja">
+    <div id="ourGranja">
         <div class="carrouselDimentions">
             <div class="titleGranja">
                 <p class="text1Granja">Nossa</p>
@@ -232,32 +235,44 @@
     <!--
         Contact page
     --> 
-    <div class="contact">
+    <div id="contact">
         <div class="contactContent">
             <h1 class="contactTitle">Contato</h1>
             <h2 class="contactSubtitle">Fale conosco</h2>
-            <form method="POST" class="form">
-                <label for="name" id="labelName">Nome *</label><br>
-                <input type="text" name="name" id="name" class="form-control" required><br>
-                <label for="email" id="labelEmail">Email *</label><br>
-                <input type="email" name="email" id="email" class="form-control" required><br>
-                <label for="Empresa" id="labelEmpresa">Empresa</label><br>
-                <input type="text" name="empresa" id="empresa" class="form-control"><br>
-                <label for="Mensagem" id="labelMensagem">Mensagem *</label><br>
-                <textarea name="mensagem" id="mensagem" class="form-control" required></textarea><br>
-                <button type="submit" id="submit">Enviar</button>
-            </form>
-            <div class="informations">
-                <p class="info">📍 Rua Luis Gonzaga Bicudo - Nº 1313 - Vila Nova, Itú - SP </p>
-                <p class="info">📞 Tel: (11) 4813-3154</p>
-                <p class="info">📧 Email: Contato@granjaitu.com.br</p>
-                <div class="socialMidia">
-                    <ul>
-                        <li><a href=""><img src="./images/redesSociais/instagram.png" alt="Instagram" class="socialMidiaIcon"></a></li>
-                        <li><a href=""><img src="./images/redesSociais/whatsapp.png" alt="Whatzapp" class="socialMidiaIcon"></a></li>
-                        <li><a href=""><img src="./images/redesSociais/facebook.png" alt="Facebook" class="socialMidiaIcon"></a></li>
-                        <li><a href=""><img src="./images/redesSociais/linkedin.png" alt="LinkedIn" class="socialMidiaIcon"></a></li>               
-                    </ul>  
+            <div class="particionForm">
+                <form method="POST" class="form">
+                    <div class="firstLineForm">
+                        <section class="nameForm">
+                            <label for="name" id="labelName">Nome *</label>
+                            <input type="text" name="name" id="nameInput" class="form-control" required>    
+                        </section>
+                        <section class="emailForm">
+                            <label for="email" id="labelEmail">Email *</label>
+                            <input type="email" name="email" id="emailInput" class="form-control" required>
+                        </section>
+                    </div>
+                    <section class="empresaForm">
+                        <label for="Empresa" id="labelEmpresa">Empresa</label>
+                        <input type="text" name="empresa" id="empresaInput" class="form-control">
+                    </section>
+                    <section class="mensageForm">
+                        <label for="Mensagem" id="labelMensagem">Mensagem *</label>
+                        <textarea name="mensagem" id="mensagemText" class="form-control" maxlength="1012" required></textarea>
+                    </section>
+                    <button type="submit" id="submit">Enviar</button>
+                </form>
+                <div class="informations">
+                    <p class="info">📍 Rua Luis Gonzaga Bicudo - Nº 1313 - Vila Nova, Itú - SP </p>
+                    <p class="info">📞 Tel: (11) 4813-3154</p>
+                    <p class="info">📧 Email: Contato@granjaitu.com.br</p>
+                    <div class="socialMidia">
+                        <ul>
+                            <li><a href="https://www.instagram.com/granjaitu0/"><img src="./images/redesSociais/instagram.png" alt="Instagram" class="socialMidiaIcon"></a></li>
+                            <li><a href=""><img src="./images/redesSociais/whatsapp.png" alt="Whatzapp" class="socialMidiaIcon"></a></li>
+                            <li><a href="https://www.facebook.com/granjaitu"><img src="./images/redesSociais/facebook.png" alt="Facebook" class="socialMidiaIcon"></a></li>
+                            <li><a href=""><img src="./images/redesSociais/linkedin.png" alt="LinkedIn" class="socialMidiaIcon"></a></li>               
+                        </ul>  
+                    </div>
                 </div>
             </div>
         </div>

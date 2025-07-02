@@ -4,6 +4,10 @@
 
 /*------------------------------------HTML and Body definitions--------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -14,6 +18,7 @@ html, body{
 header{
     display: flex;
     position: inherit;
+    scroll-behavior: smooth
 }
 
 .menu{
@@ -157,79 +162,89 @@ header{
 
 
 /*------------------------------------------Culture CSS-------------------------------------------------*/
+#cultureValues{
+    width: 100%;
+}
 
 .waveCulture{
-    position: absolute;
     width: 100%;
-    top: 120%;
     z-index: 1;
+    margin-top: -30%;
 }
 
 #cultureTitleUp{
-    position: absolute;
     color: #FF9C45;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 5em;
-    top: 123%;
-    left: 57%;
     z-index: 2;
+    margin: 0;
+    margin-top: 5%;
 }
 #cultureTitleDown{
-    position: absolute;
     color:#FF7700;
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 10em;
-    top: 123%;
-    left: 60%;
     z-index: 2;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+.eggstory{
+    display: flex;
+    flex-direction:column;
 }
 
 .imageCulture{
-    position: absolute;
     z-index: 2;
     transition: 0.3s ease-in-out;
 }
 
 #chickenRunning{
-    width: 20%;
-    top: 110%;
-    left: 28%;
+    margin-top: -55%;
+    margin-left: 80%;
+    width: 50%;
     rotate: -15deg;
 }
 
 #fullEgg1{
-    width: 15%;
-    top: 130%;
-    left: 10%;
+    margin-left: 35%;
+    margin-top: -20%;
+    width: 35%;
     rotate: -30deg;
 }
 
 #fullEgg2{
-    width: 15%;
-    top: 150%;
-    left: 25%;
+    margin-left: 80%;
+    margin-top: -30%;
+    width: 35%;
     rotate: 45deg;
 }
 
 #fullEgg3{
-    width: 13%;
-    top: 170%;
-    left: 8%;
+    margin-left: 40%;
+    margin-top: -30%;
+    width: 30%;
     rotate: -80deg;
 }
 
 #openEgg{
-    width: 25%;
-    top: 200%;
-    left: 20%;
+    margin-top: -10%;
+    margin-left: 60%;
+    width: 60%;
+}
+
+.contentCulture{
+    display: flex;
+}
+
+.contentTextCulture{
+    margin-left: 15%;
+    margin-top: -10%;
 }
 
 #values{
-    position: absolute;
-    top: 160%;
-    left: 51%;
     margin-right: 10%;
 }
 
@@ -276,10 +291,8 @@ header{
 
 .coworkers{
     background:linear-gradient(#FF7000, #FF9C45);
-    position: absolute;
     width: 100%;
     height: 29%;
-    top: 244%; 
     z-index: 2;
     overflow: hidden;
 }
@@ -324,47 +337,58 @@ header{
 }
 
 /*------------------------------------------Products CSS------------------------------------------------*/
+#products{
+    background: url(./images/mainStructure/productsBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110%;
+}
 
 .waveProducts{
-    position: absolute;
     width: 100%;
-    top:269%;
     z-index: 1;
 }
 
 .titleProducts{
-    position: absolute;
     color: #FF7700;
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 10em;
-    top: 273%;
-    left: 10%;
     z-index: 2;
+    margin-top: -5%;
+    margin-left: 5%;
 }
 
 .subtitleProducts{
-    position: absolute;
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 5em;
     text-shadow: 
         5px 5px 0px #F97316;
-    top: 295%;
-    left: 15%;
     z-index: 2;
+    margin-top: -10%;
+    margin-left: 10%;
 }
+
+.productsFullContent{
+    display: flex;
+}
+
+.leftPartProducts{
+    display: flex;
+}
+
 .productSelected{
-    position: absolute;
-    top: 315%;
-    left: 15%;
     width: 50vh;
     height: 50vh;
     transform: rotate(15deg) scale(1);
     z-index: 3;
     opacity: 1;
     transition: all 0.5s ease-in-out;
+    margin-left: -30%;
 }
 
 .product-changing {
@@ -373,9 +397,6 @@ header{
 }
 
 .productSelection{
-    position: absolute;
-    top: 320%;
-    left: 5%;
     width: 50vh;
     height: 50vh;
     z-index: 3;
@@ -418,10 +439,9 @@ header{
 }
 
 .productsTextContent{
-    position:absolute;
-    top: 295%;
-    left: 55%;
     margin-right: 5%;
+    margin-top: -10%;
+    margin-bottom: 15%;
 }
 
 .cardProducts{
@@ -511,58 +531,64 @@ header{
 }
 
 /*-------------------------------------------History CSS------------------------------------------------*/
+#ourStory{
+    width: 100%;
+}
+
+.waveOurHistory{
+    width: 100%;
+    margin-top: -20%;
+    z-index: 1;
+}
+
+.ourStoryContent{
+    display: flex;
+}
+
+.imagesOurHistory{
+    border: #FFFFFF solid 0.8em;
+    border-radius: 5%;
+    z-index: 2;
+    background-color: #fd9f4d;
+    width: 40%;
+    height: 60em;
+    margin-top: -10%;
+    margin-left: 5%;
+}
+
+.textOurHistory{
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: -10%;
+    z-index: 2;
+}
 
 #ourHistoryTitleUp{
-    position: absolute;
     color: #FF7000;
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 4em;
     text-shadow: 
         4px 4px 0px #FFFFFF;
-    top: -30%
 }
 
 #ourHistoryTitleDown{
-    position: absolute;
     color: #ce5600;
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
     font-size: 6em;
+    margin-top: -10%;
     margin-left: 5%;
-    top:-25%
 }
 
-.waveOurHistory{
-    position: absolute;
-    width: 100%;
-    top: 395%;
-    z-index: 1;
-}
-
-.imagesOurHistory{
-    position: absolute;
-    border: #FFFFFF solid 0.8em;
-    border-radius: 5%;
-    height: 90%;
-    top: 410%;
-    left: 5%;
-    z-index: 2;
-    background-color: #fd9f4d;
-}
-
-.textOurHistory{
-    position: absolute;
-    top: 430%;
-    left: 45%;
-    margin-right: 10%;
-    z-index: 2;
+.textConteinerOurHistory{
+    margin-top: -5%;
 }
 
 .textForOurHistory{
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1.25em;
+    font-size: 1.4em;
     color: #582d09;
     text-align: justify;
     line-height: 120%;
@@ -586,6 +612,13 @@ header{
 @keyframes infiniteScroll {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
+}
+
+#ourGranja {
+    margin-top: 5%;
+    width: 100%;
+    height: 60em;
+    overflow: hidden;
 }
 
 .text1Granja{
@@ -614,20 +647,9 @@ header{
     width: 100%;
 }
 
-.ourGranja {
-    position: absolute;
-    width: 100%;
-    height: 101%;
-    top: 515%;
-}
-
 .imagesCarrouselWrapper {
     width: 100%;
-    height: 101%;
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .imagesCarrousel {
@@ -668,9 +690,7 @@ header{
 
 /*-------------------------------------------Contact CSS------------------------------------------------*/
 
-.contactContent{
-    position: absolute;
-    top: 610%;
+#contact{
     width: 100%;
 }
 
@@ -679,8 +699,7 @@ header{
     font-weight: 200;
     font-size: 8em;
     color: #FF7700;
-    position: absolute;
-    left: 15%;
+    margin-left: 15%;
 }
 
 .contactSubtitle{
@@ -688,16 +707,37 @@ header{
     font-weight: bolder;
     font-size: 2.5em;
     color: #000000;
-    position: absolute;
-    left: 23%;
-    margin-top: 11.5%;
+    margin-left: 25%;
+    margin-top: -8%;
+}
+
+.particionForm{
+    display: flex;
 }
 
 .form{
-    position: absolute;
     width: 100%;
-    top: 150%;
-    left: 0;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 15%;
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    };
+}
+
+.firstLineForm{
+    display: flex;
+    width: 100%;
+}
+
+.nameForm, .emailForm{
+    width: 50%;
+}
+
+.emailForm{
+    margin-left: 3%;
 }
 
 .form label{
@@ -705,7 +745,6 @@ header{
     font-weight: bold;
     font-size: 1.5em;
     color: #777777;
-    position: absolute;
 }
 .form input{
     text-decoration: none;
@@ -716,8 +755,9 @@ header{
     font-family: 'Fira Sans', sans-serif;
     padding: 1em;
     border-radius: 1em;
-    position: absolute;
     outline: none;
+    border: #FFFFFF solid, 0.15em;
+    transition: 0.5s ease-in-out;
 }
 .form input:focus {
     border: #FF7000 solid, 0.15em;
@@ -732,22 +772,22 @@ header{
     font-family: 'Fira Sans', sans-serif;
     padding: 1em;
     border-radius: 1em;
-    position: absolute;
     outline: none;
     resize: none;
+    border: #FFFFFF solid, 0.15em;
+    transition: 0.5s ease-in-out;
 }
 
 .form textarea:focus {
     border: #FF7000 solid, 0.15em;
 }
 
-
 .form button{
     text-decoration: none;
     border: none;
     padding: 0.5em;
     border-radius: 0.5em;
-    width: 15%;
+    width: 50%;
     background-color: #FB7500;
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
@@ -755,67 +795,18 @@ header{
     font-size: 1.5em;
     cursor: pointer;
     transition: 0.5s ease;
-    position: absolute;
-    top: 500%; 
-    left: 14%;
-}
-
-#labelName{
-    top: 200%;
-    left: 15%
-}
-
-#name{
-    top: 220%;
-    left: 14%;
-    width: 20%;
-}
-
-#labelEmail{
-    top: 200%;
-    left: 40%
-}
-
-#email{
-    top: 220%;
-    left: 39%;
-    width: 20%;
-}
-
-#labelEmpresa{
-    top: 260%;
-    left: 15%
-}
-
-#empresa{
-    top: 280%;
-    left: 14%;
-    width: 45%;
-}
-
-#labelMensagem{
-    top: 320%;
-    left: 15%
-}
-
-#mensagem{
-    top: 340%;
-    left: 14%;
-    width: 45%;
-    height: 100%;
 }
 
 .informations{
-    position: absolute;
-    margin-top: 14%;
-    left: 65%;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .socialMidia{
-    width: 50%;
+    width: 40%;
     margin-top: 5%;
     ul{
         display: flex;
@@ -849,9 +840,8 @@ footer{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 60%;
-    position: absolute;
-    top: 720%;
+    height: 70%;
+    margin-bottom: -1%;
 }
 
 .blackBackground{
@@ -866,7 +856,7 @@ footer{
 }
 
 .footerPart1{
-    margin-left: 20%;
+    margin-left: 15%;
     width: 20%;
 }
 

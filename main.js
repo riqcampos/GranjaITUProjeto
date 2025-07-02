@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const images = document.querySelectorAll('.imageCarrousel');
-    let currentIndex = 1; // Começamos no índice 1, que é a primeira imagem "real"
-    let isTransitioning = false; // Flag para evitar cliques múltiplos durante a animação
+    let currentIndex = 1; 
+    let isTransitioning = false;
 
     // 1. Clonar a primeira e a última imagem
     const firstClone = images[0].cloneNode(true);
