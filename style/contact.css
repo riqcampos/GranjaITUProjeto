@@ -1,0 +1,144 @@
+
+/*-------------------------------------------Contact CSS------------------------------------------------*/
+
+#contact{
+    width: 100%;
+}
+
+.contactTitle{
+    font-family: 'Galada', cursive;
+    font-weight: 200;
+    font-size: 8em;
+    color: #FF7700;
+    margin-left: 15%;
+}
+
+.contactSubtitle{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #000000;
+    margin-left: 25%;
+    margin-top: -8%;
+}
+
+.particionForm{
+    display: flex;
+}
+
+.form{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 15%;
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    };
+}
+
+.firstLineForm{
+    display: flex;
+    width: 100%;
+}
+
+.nameForm, .emailForm{
+    width: 50%;
+}
+
+.emailForm{
+    margin-left: 3%;
+}
+
+.form label{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #777777;
+}
+.form input{
+    text-decoration: none;
+    border: none;
+    background-color: #E8E8E8;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 1em;
+    border-radius: 1em;
+    outline: none;
+    border: #FFFFFF solid, 0.15em;
+    transition: 0.5s ease-in-out;
+}
+.form input:focus {
+    border: #FF7000 solid, 0.15em;
+}
+
+.form textarea{
+    text-decoration: none;
+    border: none;
+    background-color: #E8E8E8;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 1em;
+    border-radius: 1em;
+    outline: none;
+    resize: none;
+    border: #FFFFFF solid, 0.15em;
+    transition: 0.5s ease-in-out;
+}
+
+.form textarea:focus {
+    border: #FF7000 solid, 0.15em;
+}
+
+.form button{
+    text-decoration: none;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 50%;
+    background-color: #FB7500;
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.informations{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.socialMidia{
+    width: 40%;
+    margin-top: 5%;
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin-top: 5%;
+        margin-left: -10%;
+    }
+    img{
+        width: 50%;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/*-------------------------------Animações e transicoes para o Contact----------------------------------*/
+
+.socialMidiaIcon:hover{
+    transform: scale(1.1);
+}
+
+.form button:hover{
+    background-color: #ffd4ae;
+    color: #FB7500;
+    transform: scale(1.03);
+}

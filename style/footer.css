@@ -1,0 +1,86 @@
+/*--------------------------------------------Footer CSS------------------------------------------------*/
+
+footer{
+    background-image: url(../images/mainStructure/backgroundFooter.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+    margin-bottom: -1%;
+}
+
+.blackBackground{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dividedPart{
+    display: inline-flex;
+    z-index: 10;
+}
+
+.footerPart1{
+    margin-left: 15%;
+    width: 20%;
+}
+
+.footerPart1 img{
+    width: 100%;
+}
+.footerPart1 p{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.linksFooter{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.linksFooter {
+    strong{
+        font-family: 'Galada', cursive;
+        font-weight: 200;
+        font-size: 3em;
+         color: #FF7000;
+    }
+}
+.linksFooter a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.contatoFooter{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+.contatoFooter p{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+.contatoFooter strong{
+    font-family: 'Galada', cursive;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #FF7000;
+}
+
+.textFooter{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+/*-------------------------------Animações e transicoes para o Footer-----------------------------------*/

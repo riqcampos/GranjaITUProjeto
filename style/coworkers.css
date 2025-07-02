@@ -1,0 +1,48 @@
+/*------------------------------------------Coworkers CSS------------------------------------------------*/
+
+.coworkers{
+    background:linear-gradient(#FF7000, #FF9C45);
+    width: 100%;
+    height: 29%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.coworkers li{
+    margin-right: 3.55%;
+}
+
+.coworkersList{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 220%;
+}
+
+.coworkerImage{
+    border-radius: 30%;
+    transition: ease-in-out 0.5s;
+    width: 10em;
+    height: 10em;
+}
+
+#Caetano, #Fartura, #Dalben{
+    border-radius: 0%;
+    width: auto;
+    height: auto;
+}
+
+#Pagmenos{
+    width: 10em;
+    border-radius: 10%;
+    border: #E8E8E8 solid 0.1em;
+}
+
+/*--------------------------------Animações e transições Coworkers CSS----------------------------------*/
+
+.coworkerImage:hover{
+    transform: scale(1.02);
+}

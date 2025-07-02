@@ -1,0 +1,94 @@
+/*---------------------------------------Importing fonts used----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+/*------------------------------------HTML and Body definitions--------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------Main CSS---------------------------------------------------*/
+#mainPage{
+    background-image: url(../images/mainStructure/startingBackground.svg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85em;
+    margin-top: -15%;
+}
+
+.centerSection{
+    display: flex;
+    margin-left: 10%;
+}
+
+.textDireita{
+    margin-top: 20%;    
+}
+
+.text1Main{
+    color: #FFFFFF;
+    font-family: 'Galada', cursive;
+    font-size: 6em;
+    text-shadow: 
+        3px 3px 0px #FF7000;
+    align-items: center;
+}
+
+.text2Main{
+    color:#FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: Bolder;
+    font-size: 550%;
+    margin-top: -40%;
+    align-items: center;
+}
+
+.text3Main{
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 1600%;
+    margin-top: 23%;
+    margin-left: 2%;
+}
+.squaremain{
+    width: 55%;
+    height: 1.5%;
+    background-color: #FFFFFF;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: -12%;
+    margin-bottom: 2%;
+}
+
+.contactMainButton{
+    width: 14%;
+    height: 5%;
+    background-color: #FB7500;
+    margin-left: 10%;
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 200%;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 1em;
+    border: none;
+    transition: 0.5s ease;
+    margin-left: 10%;
+}
+.contactMainButton:hover{
+    background-color: #ffd4ae;
+    color: #FB7500;
+    transform: scale(1.1);
+}
+
+/*---------------------------------------Main Animation CSS---------------------------------------------*/

@@ -1,0 +1,65 @@
+/*-------------------------------------------Menu CSS-----------------------------------------*/
+
+header{
+    display: flex;
+    position: inherit;
+    scroll-behavior: smooth
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 1;
+}
+
+#logo{
+    width: 18%;
+    margin-left: 6%;
+    margin-top: 1%;
+    display: flex;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#wave{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.menuItens{
+    position: absolute;
+    text-decoration: none;
+    margin-left: 55%;
+    margin-top: 6%;
+}
+
+.itemMenu{
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.Amenu{
+    font-size: 180%;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #ff7000;
+    transition: 0.5s ease;
+}
+
+
+/*-------------------------------------------Menu Animation CSS-----------------------------------------*/
+
+.Amenu:hover{
+    color: #FFd4ae;
+    text-shadow: 
+        4px 4px 0px #FF7000;
+}
+
+#logo:hover{
+    transform: scale(1.05);
+}

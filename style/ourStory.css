@@ -1,0 +1,76 @@
+/*-------------------------------------------History CSS------------------------------------------------*/
+#ourStory{
+    width: 100%;
+}
+
+.waveOurHistory{
+    width: 100%;
+    margin-top: -20%;
+    z-index: 1;
+}
+
+.ourStoryContent{
+    display: flex;
+}
+
+.imagesOurHistory{
+    border: #FFFFFF solid 0.8em;
+    border-radius: 5%;
+    z-index: 2;
+    background-color: #fd9f4d;
+    width: 40%;
+    height: 60em;
+    margin-top: -10%;
+    margin-left: 5%;
+}
+
+.textOurHistory{
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: -10%;
+    z-index: 2;
+}
+
+#ourHistoryTitleUp{
+    color: #FF7000;
+    font-family: 'Galada', cursive;
+    font-weight: 200;
+    font-size: 4em;
+    text-shadow: 
+        4px 4px 0px #FFFFFF;
+}
+
+#ourHistoryTitleDown{
+    color: #ce5600;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: Bolder;
+    font-size: 6em;
+    margin-top: -10%;
+    margin-left: 5%;
+}
+
+.textConteinerOurHistory{
+    margin-top: -5%;
+}
+
+.textForOurHistory{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: #582d09;
+    text-align: justify;
+    line-height: 120%;
+    letter-spacing: 105%;
+}
+
+.textForOurHistory::first-letter{
+    margin-left: 2em;
+}
+
+.specialTextHistory{
+    color: #FF7000;
+}
+
+/*------------------------------Animações e transicoes para o OurHistory--------------------------------*/
+
+
