@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/products.css">
     <link rel="stylesheet" href="./style/ourStory.css">
     <link rel="stylesheet" href="./style/ourGranja.css">
-    <link rel="stylesheet" href="./style/recipes.css">
+    <!--<link rel="stylesheet" href="./style/recipes.css">-->
     <link rel="stylesheet" href="./style/contact.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="shortcut icon" href="./images/mainStructure/iconeSiteGalinhas.png" type="image/x-icon">
@@ -21,18 +21,29 @@
     Header development
 -->
     <header>
-        <div class="menu">
+        <div class="menu" id="menu">
             <img src="./images/mainStructure/telaMainOnda.svg" id="wave" alt="">
             <img src="./images/mainStructure/logo.svg" alt="Granja ITU Logo" id="logo">
             <ul class="menuItens" id="menu">
                 <li class="itemMenu"><a class="Amenu" href="#mainPage">HOME</a></li>
                 <li class="itemMenu"><a class="Amenu" href="#jumpProducts">PRODUTOS</a></li>
                 <li class="itemMenu"><a class="Amenu" href="#jumpOurStory">HISTORIA</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#contact">CONTATO</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#jumpContact">CONTATO</a></li>
             </ul>
         </div>
     </header>
 
+    <div id="menuSticky">
+        <div class="menuStickyContent">
+            <img src="./images/mainStructure/logo.svg" alt="Granja ITU Logo" id="logoSticky">
+            <ul class="menuStickyItens">
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#mainPage">HOME</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#products">PRODUTOS</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpOurStory">HISTORIA</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpContact">CONTATO</a></li>
+            </ul>
+        </div>
+    </div>
 <!--
     Main content development
 -->
@@ -244,6 +255,7 @@
     <!--
         Contact page
     --> 
+    <div id="jumpContact"></div>
     <div id="contact">
         <div class="contactContent">
             <h1 class="contactTitle">Contato</h1>
@@ -252,20 +264,20 @@
                 <form method="POST" class="form">
                     <div class="firstLineForm">
                         <section class="nameForm">
-                            <label for="name" id="labelName">Nome *</label>
+                            <label for="nameInput" id="labelName">Nome *</label>
                             <input type="text" name="name" id="nameInput" class="form-control" required>    
                         </section>
                         <section class="emailForm">
-                            <label for="email" id="labelEmail">Email *</label>
+                            <label for="emailInput" id="labelEmail">Email *</label>
                             <input type="email" name="email" id="emailInput" class="form-control" required>
                         </section>
                     </div>
                     <section class="empresaForm">
-                        <label for="Empresa" id="labelEmpresa">Empresa</label>
+                        <label for="empresaInput" id="labelEmpresa">Empresa</label>
                         <input type="text" name="empresa" id="empresaInput" class="form-control">
                     </section>
                     <section class="mensageForm">
-                        <label for="Mensagem" id="labelMensagem">Mensagem *</label>
+                        <label for="mensagemText" id="labelMensagem">Mensagem *</label>
                         <textarea name="mensagem" id="mensagemText" class="form-control" maxlength="1012" required></textarea>
                     </section>
                     <button type="submit" id="submit">Enviar</button>

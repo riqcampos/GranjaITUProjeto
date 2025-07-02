@@ -3,7 +3,7 @@
 header{
     display: flex;
     position: inherit;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 .menu{
@@ -61,5 +61,57 @@ header{
 }
 
 #logo:hover{
+    transform: scale(1.05);
+}
+
+/*-------------------------------------------Menu Sticky CSS-----------------------------------------*/
+
+#menuSticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    background: linear-gradient(to right, #f7a364, #FF7000);
+    width: 100%;
+    z-index: 5;
+    box-shadow: 
+        0 0.5em 5px rgba(0,0,0,0.2);
+    transition: opacity 1s ease-in-out;
+}
+
+.menuStickyContent{
+    display: flex;
+}
+
+.menuStickyItens{
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    list-style-type: none
+}
+
+.itemMenuSticky{
+    margin-left: 10%;
+    transition: 0.6s ease-in-out;
+}
+
+.AmenuSticky{
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    transition: 0.6s ease-in-out;
+}
+
+#logoSticky{
+    width: 5%;
+    margin: 0.5%;
+    margin-left: 10%;
+    transition: 0.3s ease-in-out;
+}
+
+/*-------------------------------------------Menu Animation CSS-----------------------------------------*/
+
+.itemMenuSticky:hover{
     transform: scale(1.05);
 }

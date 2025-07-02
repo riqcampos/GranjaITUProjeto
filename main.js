@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //------------------------------------------Sticky Menu Logic------------------------------------------------//
+    const stickyMenu = document.getElementById('menuSticky');
+    stickyMenu.style.display = 'none';
+
+    window.addEventListener('scroll', function() {
+
+        if (window.pageYOffset >= 200) {
+            stickyMenu.style.removeProperty('display');
+        }else {
+            stickyMenu.style.display = 'none';
+        }
+    });
 
     //------------------------------------------Coworkers Carousel Logic------------------------------------------------//
-    
     const coworkersList = document.querySelector('.coworkersList');
     if (coworkersList) {
         const coworkers = Array.from(coworkersList.children);
@@ -55,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         });
     }
-
-
 
     //------------------------------------------Main Image Carousel Logic------------------------------------------------//
 
