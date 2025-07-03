@@ -30,15 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (productList && productImage) {
         productList.addEventListener('click', function(event) {
-            // Usamos delegação de eventos para melhor performance
             const clickedItem = event.target.closest('li');
 
-            // Se o clique não foi em um 'li' ou já é o item atual, não faz nada
             if (!clickedItem || clickedItem.classList.contains('curentProduct')) {
                 return;
             }
-
-            // Animação de "saída" do produto
             productImage.classList.add('product-changing');
 
             // Espera a animação de saída terminar para trocar a imagem

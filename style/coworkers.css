@@ -6,6 +6,7 @@
     height: 29%;
     z-index: 2;
     overflow: hidden;
+    margin-top: 5%;
 }
 
 .coworkers li{

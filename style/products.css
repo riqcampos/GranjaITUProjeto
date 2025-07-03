@@ -8,6 +8,10 @@
     height: 110%;
 }
 
+.productsContent{
+    background-color: #88888811;
+}
+
 .waveProducts{
     width: 100%;
     z-index: 1;
@@ -44,14 +48,17 @@
 }
 
 .productSelected{
-    width: 50vh;
-    height: 50vh;
+    width: 60vh;
+    height: 60vh;
     transform: rotate(15deg) scale(1);
     z-index: 3;
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    margin-left: -30%;
+    margin-left: -20%;
+    margin-top: -5%;
 }
+
+/*------------------------------------------Image specificies------------------------------------------------*/
 
 .product-changing {
     transform: rotate(0deg) scale(0.5);
@@ -69,12 +76,12 @@
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
     text-decoration: none;
     background-color: #FF7700;
     width: 6vh;
     height: 6vh;
-    border-radius: 50%;
+    border-radius: 0.4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,12 +94,12 @@
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-decoration: none;
     background-color: #FFFFFF;
     width: 6vh;
     height: 6vh;
-    border-radius: 50%;
+    border-radius: 0.2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,13 +116,12 @@
 .cardProducts{
     padding: 3%;
     margin-bottom: 5%;
-    border-radius: 2em;
+    border-radius: 0.2em;
     display: inline-flex;
     cursor: pointer;
     transition: 0.8s ease;
     section{
         transition: 0.5s ease-in-out;
-        border-radius: 1em;
         padding: 1%;
     }
 }
@@ -125,8 +131,8 @@
     margin: 2%;
     height: 4em;
     width: 4em;
-    border-radius: 50%;
-    border: #FF7700 solid 0.3em;
+    border-radius: 1em;
+    border: #ffa95e solid 0.2em;
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.5s ease-in-out;
 }
@@ -175,7 +181,7 @@
     transform: scale(1.03);
     section{
         background-color: #FFFFFF;
-        border-radius: 1em;
+        border-radius: 0.5em;
         padding: 1%;
         box-shadow: 
             0.5em 0.5em 0.1em #0000005d;
@@ -188,6 +194,6 @@
     }
     .imageProducts{
         background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
+        border-radius: 1em;
     }
 }
