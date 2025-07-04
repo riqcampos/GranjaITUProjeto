@@ -70,7 +70,7 @@ header{
     position: fixed;
     top:0;
     left: 0;
-    background: linear-gradient(to right, #f7a364, #FF7000);
+    background: linear-gradient(to right, #fcc49a, #FF7000);
     width: 100%;
     z-index: 5;
     box-shadow: 
@@ -104,7 +104,7 @@ header{
 }
 
 #logoSticky{
-    width: 5%;
+    width: 4%;
     margin: 0.5%;
     margin-left: 10%;
     transition: 0.3s ease-in-out;
