@@ -4,92 +4,141 @@
     margin-bottom: 5%;
 }
 
-/*----------------------------------Borders for recipes css-----------------------------------*/
+.titleRecipes{
+        font-family: 'Galada', cursive;
+        font-weight: 200;
+        font-size: 8em;
+        color: #FF7000;
+        margin-left: 5%;
+        margin-bottom: 1%;
+    }
+
+.cardRecipe, .titleRecipe, .imageRecipe{
+    opacity: 0;
+    transition: 1s ease-in-out;
+    display: none;
+}
+
+.imageRecipeContainer{
+        width: 1%;
+        height: 1vh;
+        overflow: hidden;
+        border-radius: 5em;
+        opacity: 0;
+        transition: 1s ease-in-out;
+}
 
 .borderRecipe{
+    width: 90%;
+    height: 10vh;
+    margin-left: 5%;
+    transition: 0.5s ease-in-out;
+    border-radius: 5.5em;
+    background: linear-gradient(-200deg, #FF7000, #000dc498);
+    margin-bottom: 1%;
+}
+
+/*----------------------------------PreDisplay for recipes css-----------------------------------*/
+
+/*----------------------------------PosDisplay for recipes css-----------------------------------*/
+
+/*----------------------------------Borders for recipes css-----------------------------------*/
+
+.borderRecipe:active{
     padding: 0.7%;
     border-radius: 5.5em;
     margin-bottom: 3%;
     background-image: linear-gradient(-200deg,#FF7000, #000dc498);
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    transition: 0.5s ease-in-out;
+
+    .titleRecipe{
+        font-family: 'Galada', cursive;
+        font-weight: 200;
+        font-size: 4em;
+        color: #FF7000;
+        margin-top: -3%;
+        margin-bottom: -1%;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        display: inline;
+    }
+
+    .cardsRecipes{
+        z-index: 2;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    .cardRecipe{
+        border-radius: 5em;
+        align-items: center;
+        display: flex;
+        padding: 3%;
+        background-color: #FFFFFF;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    .imageRecipeContainer{
+        width: 40%;
+        height: 50vh;
+        overflow: hidden;
+        border-radius: 5em;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    #conteinerFiosDeOvos{
+        height: 80vh;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    .imageRecipe{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        display: inline;
+    }
+
+    .textRecipe{
+        width: 50%;
+        margin-left: 5%;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    .descriptionRecipe{
+        display: flex;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 1.1em;
+        text-align: justify;
+        color: #582d09;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        .rightRecipe{
+            width: 60%;
+        }
+        .leftRecipe{
+            width: 50%;
+        }
+        n{
+            font-family: 'Galada', cursive;
+            font-weight: 200;
+            font-size: 2em;
+            color: #fd8427;
+        };
+        ul{
+            margin-top: -1%;
+            margin-left: -10%;
+        };
+    }
 }
 
 /*----------------------------------Texts and titles for recipes css-----------------------------------*/
-
-.titleRecipes{
-    font-family: 'Galada', cursive;
-    font-weight: 200;
-    font-size: 8em;
-    color: #FF7000;
-    margin-left: 5%;
-    margin-bottom: 1%;
-}
-
-.titleRecipe{
-    font-family: 'Galada', cursive;
-    font-weight: 200;
-    font-size: 4em;
-    color: #FF7000;
-    margin-top: -3%;
-    margin-bottom: -1%;
-}
-
-.cardsRecipes{
-    margin-left: 5%;
-    margin-right: 5%;
-    z-index: 2;
-}
-
-.cardRecipe{
-    border-radius: 5em;
-    align-items: center;
-    display: flex;
-    padding: 3%;
-    background-color: #FFFFFF;
-}
-
-.imageRecipeContainer{
-    width: 40%;
-    height: 50vh;
-    overflow: hidden;
-    border-radius: 5em;
-}
-
-#conteinerFiosDeOvos{
-    height: 80vh;
-}
-
-.imageRecipe{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.textRecipe{
-    width: 50%;
-    margin-left: 5%;
-}
-
-.descriptionRecipe{
-    display: flex;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 1.1em;
-    text-align: justify;
-    color: #582d09;
-    .rightRecipe{
-        width: 60%;
-    }
-    .leftRecipe{
-        width: 50%;
-    }
-    n{
-        font-family: 'Galada', cursive;
-        font-weight: 200;
-        font-size: 2em;
-        color: #fd8427;
-    };
-    ul{
-        margin-top: -1%;
-        margin-left: -10%;
-    };
-}
