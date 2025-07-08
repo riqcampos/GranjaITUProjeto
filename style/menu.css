@@ -31,7 +31,7 @@ header{
 .menuItens{
     position: absolute;
     text-decoration: none;
-    margin-left: 55%;
+    margin-left: 40%;
     margin-top: 6%;
 }
 
@@ -86,7 +86,7 @@ header{
 .menuStickyItens{
     display: flex;
     align-items: center;
-    margin-left: 50%;
+    margin-left: 30%;
     list-style-type: none;
     transition: 0.5s ease-in-out;
 }
