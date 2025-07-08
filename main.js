@@ -1,14 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     //------------------------------------------Sticky Menu Logic------------------------------------------------//
     const stickyMenu = document.getElementById('menuSticky');
-    stickyMenu.style.display = 'none';
+    stickyMenu.style.marginTop = '-5%';
+    stickyMenu.style.opacity = '0';
 
     window.addEventListener('scroll', function() {
-
         if (window.pageYOffset >= 200) {
-            stickyMenu.style.removeProperty('display');
+            stickyMenu.style.marginTop = '0%';
+            stickyMenu.style.opacity = '1';
         }else {
-            stickyMenu.style.display = 'none';
+            stickyMenu.style.marginTop = '-5%';
+            stickyMenu.style.opacity = '0';
         }
     });
 
