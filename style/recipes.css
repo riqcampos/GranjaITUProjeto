@@ -80,9 +80,7 @@
 
 /*----------------------------------PosDisplay for recipes css-----------------------------------*/
 
-/*----------------------------------Borders for recipes css-----------------------------------*/
-
-.borderRecipe:active{
+.borderRecipe.expanded{
     padding: 0.7%;
     border-radius: 5.5em;
     margin-bottom: 3%;
@@ -96,6 +94,7 @@
         opacity: 0;
         transition: 0.5s ease-in-out;;
         font-size: 0.01em;
+        display: none;
     }
 
     .titleRecipe{
@@ -184,5 +183,3 @@
         };
     }
 }
-
-/*----------------------------------Texts and titles for recipes css-----------------------------------*/

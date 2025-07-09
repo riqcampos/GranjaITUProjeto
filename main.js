@@ -144,4 +144,26 @@ document.addEventListener('DOMContentLoaded', function() {
         carousel.style.transition = 'none'; // Remove transição para o ajuste
         carousel.style.transform = `translateX(-${newImageWidth * currentIndex}px)`;
     });
+
+    //------------------------------------------Recipes Accordion Logic------------------------------------------------//
+    const recipeBorders = document.querySelectorAll('.borderRecipe');
+
+    recipeBorders.forEach(border => {
+        border.addEventListener('click', function() {
+            // Verifica se a receita clicada já está expandida
+            const isExpanded = this.classList.contains('expanded');
+
+            // Primeiro, recolhe qualquer receita que esteja atualmente expandida
+            const currentlyExpanded = document.querySelector('.borderRecipe.expanded');
+            if (currentlyExpanded) {
+                currentlyExpanded.classList.remove('expanded');
+            }
+
+            // Se a receita clicada não era a que já estava expandida, expande-a.
+            // Isso cria o efeito de "toggle" (clicar de novo para fechar).
+            if (!isExpanded) {
+                this.classList.add('expanded');
+            }
+        });
+    });
 });
