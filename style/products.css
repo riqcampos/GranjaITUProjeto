@@ -1,15 +1,13 @@
 /*------------------------------------------Products CSS------------------------------------------------*/
 #products{
-    background: url(../images/mainStructure/productsBackground.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 110%;
 }
 
 .productsContent{
-    background-color: #88888811;
+    background-image: url(../images/mainStructure/productsBackgroundWood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .waveProducts{
@@ -17,13 +15,20 @@
     z-index: 1;
 }
 
+.waveProductsDown{
+    width: 100%;
+    margin-bottom: -1%;
+}
+
 .titleProducts{
-    color: #FF7700;
+    color: #ffffff;
     font-family: 'Galada', cursive;
     font-weight: 200;
     font-size: 10em;
+    text-shadow: 
+        5px 5px 0px #F97316;
     z-index: 2;
-    margin-top: -5%;
+    margin-top: -1%;
     margin-left: 5%;
 }
 
@@ -48,14 +53,14 @@
 }
 
 .productSelected{
-    width: 60vh;
-    height: 60vh;
+    width: 70vh;
+    height: 70vh;
     transform: rotate(15deg) scale(1);
     z-index: 3;
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    margin-left: -20%;
     margin-top: -5%;
+    margin-left: -10%;
 }
 
 /*------------------------------------------Image specificies------------------------------------------------*/
@@ -110,7 +115,6 @@
 .productsTextContent{
     margin-right: 5%;
     margin-top: -10%;
-    margin-bottom: 15%;
 }
 
 .cardProducts{

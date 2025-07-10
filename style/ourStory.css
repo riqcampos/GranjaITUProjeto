@@ -18,16 +18,17 @@
     border-radius: 5%;
     z-index: 2;
     background-color: #fd9f4d;
-    width: 40%;
+    width: 50%;
     height: 60em;
-    margin-top: -10%;
     margin-left: 5%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
 }
 
 .textOurHistory{
-    margin-right: 10%;
-    margin-left: 5%;
-    margin-top: -10%;
+    margin-right: 5%;
+    margin-left: 3%;
+    margin-top: -3%;
     z-index: 2;
 }
 
@@ -73,4 +74,6 @@
 
 /*------------------------------Animações e transicoes para o OurHistory--------------------------------*/
 
-
+.imagesOurHistory:hover{
+    transform: scale(1.03);
+}

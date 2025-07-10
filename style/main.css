@@ -46,7 +46,7 @@ html, body{
     color:#FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
-    font-size: 550%;
+    font-size: 500%;
     margin-top: -40%;
     align-items: center;
 }
@@ -55,17 +55,17 @@ html, body{
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
-    font-size: 1600%;
-    margin-top: 23%;
+    font-size: 1400%;
+    margin-top: 24%;
     margin-left: 2%;
 }
 .squaremain{
-    width: 55%;
-    height: 1.5%;
+    width: 63%;
+    height: 1%;
     background-color: #FFFFFF;
     z-index: 1;
     margin-left: 10%;
-    margin-top: -12%;
+    margin-top: -10%;
     margin-bottom: 2%;
 }
 
