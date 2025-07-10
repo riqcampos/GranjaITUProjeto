@@ -454,7 +454,7 @@
             <h1 class="contactTitle">Contato</h1>
             <h2 class="contactSubtitle">Fale conosco</h2>
             <div class="particionForm">
-                <form method="POST" class="form">
+                <form action ="https://formsubmit.co/" method="POST" class="form">
                     <div class="firstLineForm">
                         <section class="nameForm">
                             <label for="nameInput" id="labelName">Nome *</label>
@@ -474,6 +474,9 @@
                         <textarea name="mensagem" id="mensagemText" class="form-control" maxlength="1012" required></textarea>
                     </section>
                     <button type="submit" id="submit">Enviar</button>
+                    <input type="hidden" name="_subject" value="Nova mensagem">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
                 <div class="informations">
                     <p class="info">📍 Rua Luis Gonzaga Bicudo - Nº 1313 - Vila Nova, Itú - SP </p>
