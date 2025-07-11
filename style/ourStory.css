@@ -19,7 +19,7 @@
     z-index: 2;
     background-color: #fd9f4d;
     width: 50%;
-    height: 60em;
+    height: 100vh;
     margin-left: 5%;
     object-fit: cover;
     transition: 0.5s ease-in-out;
@@ -46,7 +46,7 @@
     font-family: 'Fira Sans', sans-serif;
     font-weight: Bolder;
     font-size: 6em;
-    margin-top: -10%;
+    margin-top: max(-0.5em, -10%);
     margin-left: 5%;
 }
 
@@ -76,4 +76,19 @@
 
 .imagesOurHistory:hover{
     transform: scale(1.03);
+}
+
+/*------------------------------Responsivity for OurHistory---------------------------------------------*/
+
+@media(max-width: 1500px){
+    .ourStoryContent{
+        flex-direction: column;
+    }
+
+    .imagesOurHistory{
+        width: 90%;
+        border-radius: 3em;
+        margin-left: 3%;
+        height: 60vh;
+    }
 }

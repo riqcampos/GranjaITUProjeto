@@ -41,7 +41,7 @@
 #chickenRunning{
     margin-top: -55%;
     margin-left: 80%;
-    width: 50%;
+    width: min(20em, 50%);
     rotate: -15deg;
 }
 
@@ -102,7 +102,6 @@
     letter-spacing: 105%;
     margin-top: -5%;
     margin-bottom: 5%;
-    text-align: justify;
 }
 
 .particionCulture{
@@ -122,4 +121,39 @@
 
 .imageCulture:hover{
     transform: scale(1.05);
+}
+
+/*------------------------------Responsivity for Culture------------------------------------------------*/
+
+@media(max-width: 1500px){
+    .contentCulture{
+        flex-direction: column;
+    }
+    #chickenRunning{
+        margin-top: -10%;
+        margin-left: 40%;
+    }
+    #fullEgg1{
+        margin-left: 10%;
+        margin-top: -20%;
+    }
+
+    #fullEgg2{
+        margin-left: 50%;
+        margin-top: -30%;
+    }
+
+    #fullEgg3{
+        margin-left: 20%;
+        margin-top: -30%;
+    }
+
+    #openEgg{
+        margin-top: -10%;
+        margin-left: 40%;
+        width: 60%;
+    }
+    .contentTextCulture{
+        margin-left: 5%;
+    }
 }

@@ -48,3 +48,24 @@
 section>img:hover{
     transform: scale(1.03);
 }
+
+/*------------------------------------------Tasting Responsivity CSS---------------------------------*/
+
+@media(max-width: 1500px){
+    .images{
+        margin-left: 5%;
+        width: 100%;
+        section{
+            .smallImage, .largeImage{
+                width: 90%;
+            }
+        }
+        .downTasting, .upTasting{
+            display: flex;
+            flex-direction: column;
+        }
+        .downTasting{
+            margin-left: 0%;
+        }
+    }
+}

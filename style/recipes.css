@@ -167,7 +167,6 @@
         font-family: 'Fira Sans', sans-serif;
         font-weight: bolder;
         font-size: 1.1em;
-        text-align: justify;
         color: #582d09;
         opacity: 1;
         transition: 0.5s ease-in-out;
@@ -187,5 +186,35 @@
             margin-top: -1%;
             margin-left: -10%;
         };
+    }
+}
+
+/*----------------------------------Responsivity for recipes css-----------------------------------*/
+
+@media(max-width: 1800px){
+    .cardRecipe{
+        flex-direction: column;
+    }
+    .borderRecipe.expanded{
+        border-radius: 5em;
+        margin-top: 3%;
+        .imageRecipeContainer{
+            width: 90%;
+        };
+        .textRecipe{
+            width: 90%;
+        };
+        .descriptionRecipe{
+            flex-direction: column;
+            .rightRecipe, .leftRecipe{
+                width: 80%;
+            }
+            ul{
+                margin-left: -5%;
+            }
+        };
+        #conteinerFiosDeOvos{
+            height: 40vh;
+        }
     }
 }

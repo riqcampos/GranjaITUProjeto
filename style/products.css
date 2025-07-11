@@ -61,6 +61,7 @@
     transition: all 0.5s ease-in-out;
     margin-top: -5%;
     margin-left: -10%;
+    border-radius: 30%;
 }
 
 /*------------------------------------------Image specificies------------------------------------------------*/
@@ -199,5 +200,39 @@
     .imageProducts{
         background-color: rgba(255, 255, 255, 0.3);
         border-radius: 1em;
+    }
+}
+
+/*------------------------------------------Image specificies------------------------------------------------*/
+
+@media (max-width: 1800px) {
+    .productsFullContent{ 
+        flex-direction: column;
+    }
+
+    .subtitleProducts{
+        margin-top: max(-2.5em, -35%);
+    }
+
+    .productList{
+        display: flex;
+        li{
+            margin-right: 3%;
+        }
+    }
+
+    .leftPartProducts{
+        flex-direction: column;
+    }
+
+    .productSelected{
+        margin-left: 10%;
+        margin-top: max(-20em, -50%);
+        height: 60vh;
+        width: 60vh;
+    }
+
+    .textProducts{
+        margin-top: 0%;
     }
 }
