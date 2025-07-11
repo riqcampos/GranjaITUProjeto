@@ -166,4 +166,35 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    //------------------------------------------Hamburger Menu Logic------------------------------------------------//
+    const hamburgerMain = document.getElementById('hamburger-main');
+    const menuItensList = document.getElementById('menuItensList');
+    const hamburgerSticky = document.getElementById('hamburger-sticky');
+    // O menu sticky usa a mesma lista de itens do menu principal no modo mobile.
+    // Isso garante que apenas um menu mobile seja aberto por vez.
+
+    const setupHamburgerMenu = (hamburger, menu) => {
+        if (hamburger && menu) {
+            hamburger.addEventListener('click', () => {
+                // Alterna o estado ativo do hamburger e do menu
+                hamburgerMain.classList.toggle('active', !hamburgerMain.classList.contains('active'));
+                hamburgerSticky.classList.toggle('active', hamburgerMain.classList.contains('active'));
+                menu.classList.toggle('active', hamburgerMain.classList.contains('active'));
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    // Fecha o menu ao clicar em um link
+                    hamburgerMain.classList.remove('active');
+                    hamburgerSticky.classList.remove('active');
+                    menu.classList.remove('active');
+                });
+            });
+        }
+    };
+
+    // Configura ambos os botões para controlar o mesmo menu mobile
+    setupHamburgerMenu(hamburgerMain, menuItensList);
+    setupHamburgerMenu(hamburgerSticky, menuItensList);
 });
