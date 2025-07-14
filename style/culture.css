@@ -1,6 +1,7 @@
 /*------------------------------------------Culture CSS-------------------------------------------------*/
 #cultureValues{
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 .waveCulture{
@@ -41,7 +42,7 @@
 #chickenRunning{
     margin-top: -55%;
     margin-left: 80%;
-    width: min(20em, 50%);
+    width: 50%;
     rotate: -15deg;
 }
 

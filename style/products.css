@@ -1,6 +1,7 @@
 /*------------------------------------------Products CSS------------------------------------------------*/
 #products{
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 .productsContent{
@@ -53,14 +54,14 @@
 }
 
 .productSelected{
-    width: 70vh;
-    height: 70vh;
+    width: 75vh;
+    height: 75vh;
     transform: rotate(15deg) scale(1);
     z-index: 3;
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    margin-top: -5%;
-    margin-left: -10%;
+    margin-top: -8%;
+    margin-left: -15%;
     border-radius: 30%;
 }
 
