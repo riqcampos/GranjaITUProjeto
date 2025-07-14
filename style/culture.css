@@ -162,4 +162,26 @@
     .contentTextCulture{
         margin-left: 5%;
     }
+
+    #cultureTitleUp{
+        font-size: 3em;
+    }
+    
+    #cultureTitleDown{
+        font-size: 5em;
+    }
+
+    .titleCulture{
+        font-size: 1.5em;
+    }
+
+    .textCulture{
+        font-size: 1em;
+    }
+
+    .iconCulture{
+        height: 4em;
+        width: 4em;
+        
+    }
 }

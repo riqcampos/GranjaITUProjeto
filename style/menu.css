@@ -173,16 +173,22 @@ header{
     }
 
     .itemMenu { 
-        display: block;
         margin: 0; 
+        align-items: center;
+        text-align: justify;
+        color: #FFFFFF;
     }
 
     .Amenu { 
         font-size: 1.5rem;
+        color: #FFFFFF;
     }
 
     .Amenu:hover{
         transform: scale(1.03);
+        text-shadow: 
+            4px 4px 0px #FF7000;
+        color: #FFFFFF;
     }
 
     .hamburger {

@@ -94,4 +94,17 @@
         margin-left: 3%;
         height: 60vh;
     }
+
+    #ourHistoryTitleUp{
+        font-size: 3em;
+    }
+
+    #ourHistoryTitleDown{
+        font-size: 4em;
+    }
+
+    .textForOurHistory{
+        font-size: 1em;
+    }
+
 }

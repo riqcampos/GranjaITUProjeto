@@ -80,3 +80,30 @@
 .buttonCarrousel:hover{
     transform: scale(1.1);
 }
+
+/*------------------------------Responsivity para o Carousel----------------------------------*/
+
+@media (max-width: 1500px){
+    #ourGranja{
+        height: auto;
+    }
+
+    .text1Granja{
+        font-size: 1.5em;
+        margin-top: 3%;
+    }
+    .text2Granja{
+        font-size: 3em;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+
+    #RightBtn{
+        margin-left: 85%;
+        margin-top: 30%;
+    }
+
+    #LeftBtn{
+        margin-top: 30%;
+    }
+}

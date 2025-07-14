@@ -198,3 +198,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHamburgerMenu(hamburgerMain, menuItensList);
     setupHamburgerMenu(hamburgerSticky, menuItensList);
 });
+
+window.addEventListener('resize', function() {
+  location.reload();
+});
+

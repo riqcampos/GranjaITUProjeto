@@ -95,7 +95,9 @@ footer{
         font-size: 1em;
     }
     .textFooter{
-        margin-left: 5%;
+        text-align: center;
+        font-size: 0.5em;
+        margin-left: 0%;
     }
 
     .footerPart1 p{

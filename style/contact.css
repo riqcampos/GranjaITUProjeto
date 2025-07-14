@@ -146,6 +146,15 @@
 
 /*-------------------------------Responsivity para o Contact--------------------------------------------*/
 @media(max-width: 1500px){
+    .contactTitle{
+        font-size: 5em;
+    }
+
+    .contactSubtitle{
+        font-size: 2em;
+    }
+
+
     .particionForm{
         flex-direction: column;
     }
@@ -154,11 +163,18 @@
         margin-bottom: 10%;
         margin-left: 10%;
         width: 80%;
+        font-size: 1em;
     }
 
     .form{
         width: 80%;
         margin-left: 10%;
+        label{
+            font-size: 1em;
+        }
+        input{
+            font-size: 0.8em;
+        }
     }
 
     .contactTitle{

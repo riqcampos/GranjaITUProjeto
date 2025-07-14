@@ -52,12 +52,18 @@ section>img:hover{
 /*------------------------------------------Tasting Responsivity CSS---------------------------------*/
 
 @media(max-width: 1500px){
+    .titleTastings{
+        font-size: 5em;
+    }
+
     .images{
         margin-left: 5%;
         width: 100%;
         section{
             .smallImage, .largeImage{
                 width: 90%;
+                height: 60vh;
+                margin-bottom: 3%;
             }
         }
         .downTasting, .upTasting{

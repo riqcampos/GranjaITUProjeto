@@ -211,12 +211,17 @@
 /*------------------------------------------Image specificies------------------------------------------------*/
 
 @media (max-width: 1800px) {
-    .productsFullContent{ 
-        flex-direction: column;
+    .titleProducts{
+        font-size: 4em;
+        margin-bottom: 3%;
     }
 
     .subtitleProducts{
-        margin-top: max(-2.5em, -35%);
+        font-size: 3em;
+    }
+
+    .productsFullContent{ 
+        flex-direction: column;
     }
 
     .productList{
@@ -232,9 +237,10 @@
 
     .productSelected{
         margin-left: 5%;
-        margin-top: max(-20em, -50%);
-        height: 55vh;
-        width: 55vh;
+        margin-bottom: 10%;
+        margin-top: max(-20em, -70%);
+        width: 90%;
+        height: 90%;
     }
 
     .textProducts{

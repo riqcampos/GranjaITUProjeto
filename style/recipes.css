@@ -193,6 +193,10 @@
 /*----------------------------------Responsivity for recipes css-----------------------------------*/
 
 @media(max-width: 1800px){
+    .titleRecipes{
+        font-size: 5em;
+    }
+
     .cardRecipe{
         flex-direction: column;
     }
@@ -201,6 +205,7 @@
         margin-top: 3%;
         .imageRecipeContainer{
             width: 90%;
+            font-size: 1em;
         };
         .textRecipe{
             width: 90%;
