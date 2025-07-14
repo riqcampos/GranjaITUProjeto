@@ -142,3 +142,26 @@
     color: #FB7500;
     transform: scale(1.03);
 }
+
+/*-------------------------------Responsivity para o Contact--------------------------------------------*/
+@media(max-width: 1500px){
+    .particionForm{
+        flex-direction: column;
+    }
+
+    .informations{
+        margin-bottom: 10%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .form{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .contactTitle{
+        margin-bottom: 0%;
+        margin-left: 10%;
+    }
+}

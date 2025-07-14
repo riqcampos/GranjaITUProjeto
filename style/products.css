@@ -226,10 +226,10 @@
     }
 
     .productSelected{
-        margin-left: 10%;
+        margin-left: 5%;
         margin-top: max(-20em, -50%);
-        height: 60vh;
-        width: 60vh;
+        height: 55vh;
+        width: 55vh;
     }
 
     .textProducts{

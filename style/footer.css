@@ -84,3 +84,40 @@ footer{
 }
 
 /*-------------------------------Animações e transicoes para o Footer-----------------------------------*/
+
+/*-------------------------------Responsivity para o Footer---------------------------------------------*/
+
+@media(max-width:1500px){
+    .contatoFooter strong{
+        font-size: 1.5em;
+    }
+    .contatoFooter p{
+        font-size: 1em;
+    }
+    .textFooter{
+        margin-left: 5%;
+    }
+
+    .footerPart1 p{
+        display: none;
+    }
+    
+    .footerPart1{
+        margin-left: 5%;
+        margin-top: 5%;
+        img{
+            display: none;
+        }
+    }
+
+    .linksFooter{
+        margin-top: 8%;
+        strong{
+            font-size: 2em;
+        }
+    }
+
+    .contatoFooter{
+        margin-top: 5%;
+    }
+}
