@@ -17,7 +17,7 @@
 .imagesOurHistory{
     border: #FFFFFF solid 0.8em;
     border-radius: 5%;
-    z-index: 2;
+    z-index: 0;
     background-color: #fd9f4d;
     width: 50%;
     height: 100vh;
@@ -30,7 +30,7 @@
     margin-right: 5%;
     margin-left: 3%;
     margin-top: -3%;
-    z-index: 2;
+    z-index: 0;
 }
 
 #ourHistoryTitleUp{
@@ -40,6 +40,7 @@
     font-size: 4em;
     text-shadow: 
         4px 4px 0px #FFFFFF;
+    z-index: 0;
 }
 
 #ourHistoryTitleDown{
@@ -49,6 +50,7 @@
     font-size: 6em;
     margin-top: max(-0.5em, -10%);
     margin-left: 5%;
+    z-index: 0;
 }
 
 .textConteinerOurHistory{
