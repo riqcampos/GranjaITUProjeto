@@ -167,7 +167,6 @@
     margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
-    text-align: justify;
     transition: 0.5s ease-in-out;
 }
 
@@ -245,5 +244,32 @@
 
     .textProducts{
         margin-top: 0%;
+    }
+
+    .productsTextContent{
+        margin-right: 0%;
+    }
+
+    .imageProducts{
+        height: 3em;
+        width: 3em;
+        background-color: #ffffff71;
+    }
+
+    .cardProducts{
+        section{
+            background-color: #FFFFFF;
+            border-radius: 0.5em;
+            padding: 1%;
+            text-align: left;
+            box-shadow: 
+                0.5em 0.5em 0.1em #0000005d;
+            .titleProductsText{
+                color: #FF7700;
+            }
+            .textProducts{
+                color: #582d09;
+            }
+        }
     }
 }

@@ -200,27 +200,48 @@
     .cardRecipe{
         flex-direction: column;
     }
+
+    .borderRecipe{
+        height: 5vh;
+    }
+
+    .titlePreHover{
+        font-size: 2em;
+    }
+
     .borderRecipe.expanded{
         border-radius: 5em;
         margin-top: 3%;
+        padding: 2%;
         .imageRecipeContainer{
             width: 90%;
             font-size: 1em;
-        };
+        }
         .textRecipe{
             width: 90%;
-        };
+            font-size: 0.7em;
+        }
+
+        .titleRecipe{
+            font-size: 3em;
+        }
+
+        .imageRecipeContainer{
+            height: 30vh;
+        }
+
         .descriptionRecipe{
             flex-direction: column;
+            margin-bottom: 2%;
             .rightRecipe, .leftRecipe{
                 width: 80%;
             }
             ul{
                 margin-left: -5%;
             }
-        };
+        }
         #conteinerFiosDeOvos{
-            height: 40vh;
+            height: 30vh;
         }
     }
 }

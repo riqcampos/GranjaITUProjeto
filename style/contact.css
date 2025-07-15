@@ -175,6 +175,13 @@
         input{
             font-size: 0.8em;
         }
+        button{
+            transform: scale(0.9);
+            font-size: 1em;
+        }
+        button:hover{
+            transform: scale(0.95);
+        }
     }
 
     .contactTitle{

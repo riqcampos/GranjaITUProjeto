@@ -199,7 +199,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHamburgerMenu(hamburgerSticky, menuItensList);
 });
 
-window.addEventListener('resize', function() {
-  location.reload();
-});
-
+// Recarregar a página ao redimensionar a tela pode causar uma experiência de usuário ruim.
+// Os outros carrosséis já possuem lógica para se ajustar ao redimensionamento,
+// e as alterações no CSS tornam o carrossel de parceiros responsivo sem a necessidade de recarregar.
+// É recomendado remover este listener.
+// window.addEventListener('resize', function() {
+//   location.reload();
+// });

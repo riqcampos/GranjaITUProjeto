@@ -1,4 +1,8 @@
 /*------------------------------------------Coworkers CSS------------------------------------------------*/
+@keyframes infiniteScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
 
 .coworkers{
     background:linear-gradient(#FF7000, #fab172);
@@ -6,38 +10,37 @@
     z-index: 2;
     overflow: hidden;
     margin-top: 5%;
-    background-color: #FFFFFF;
 }
 
 .coworkers li{
-    margin-right: 3.55%;
+    margin: 0 clamp(1.5rem, 3vw, 4rem);
+    margin-right: clamp(1.9rem, 5vw, 6rem);
+    flex-shrink: 0; 
 }
 
 .coworkersList{
-    display: inline-flex;
+    display: flex;
     list-style: none;
     align-items: center;
     background-color: #FFFFFF;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    width: 220%;
+    padding: 2em 0;
+    width: max-content; 
 }
 
 .coworkerImage{
-    border-radius: 30%;
     transition: ease-in-out 0.5s;
-    width: 10em;
-    height: 10em;
+    height: 9em;
+    width: auto;
+    max-width: 12em;
+    object-fit: contain;
+    border-radius: 1em; 
 }
 
 #Caetano, #Fartura, #Dalben{
     border-radius: 0%;
-    width: auto;
-    height: auto;
 }
 
 #Pagmenos{
-    width: 10em;
     border-radius: 10%;
     border: #E8E8E8 solid 0.1em;
 }
@@ -46,4 +49,12 @@
 
 .coworkerImage:hover{
     transform: scale(1.02);
+}
+
+/*------------------------------------Responsivity Coworkers CSS----------------------------------------*/
+@media (max-width: 768px) {
+    .coworkerImage {
+        height: 5em;
+        max-width: 9em;
+    }
 }
