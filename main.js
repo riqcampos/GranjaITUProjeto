@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isTransitioning = false;
     });
 
-    // Bônus: Recalcular a largura se a janela for redimensionada
     window.addEventListener('resize', () => {
         const newImageWidth = allImages[0].clientWidth;
         carousel.style.transition = 'none'; // Remove transição para o ajuste
@@ -167,12 +166,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    //------------------------------------------Fade-in on Scroll Logic------------------------------------------------//
+    const observerOptions = {
+        root: null, // Usa o viewport como área de observação
+        rootMargin: '0px',
+        threshold: 0.1 // A animação dispara quando 10% do elemento estiver visível
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // Se o elemento está intersectando (visível)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Para de observar o elemento para não re-animar
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Pega todos os elementos com a classe .fade-in-element e começa a observá-los
+    document.querySelectorAll('.fade-in-element').forEach(el => observer.observe(el));
+
     //------------------------------------------Hamburger Menu Logic------------------------------------------------//
     const hamburgerMain = document.getElementById('hamburger-main');
     const menuItensList = document.getElementById('menuItensList');
     const hamburgerSticky = document.getElementById('hamburger-sticky');
-    // O menu sticky usa a mesma lista de itens do menu principal no modo mobile.
-    // Isso garante que apenas um menu mobile seja aberto por vez.
 
     const setupHamburgerMenu = (hamburger, menu) => {
         if (hamburger && menu) {
@@ -199,10 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHamburgerMenu(hamburgerSticky, menuItensList);
 });
 
-// Recarregar a página ao redimensionar a tela pode causar uma experiência de usuário ruim.
-// Os outros carrosséis já possuem lógica para se ajustar ao redimensionamento,
-// e as alterações no CSS tornam o carrossel de parceiros responsivo sem a necessidade de recarregar.
-// É recomendado remover este listener.
-// window.addEventListener('resize', function() {
-//   location.reload();
-// });
+window.addEventListener('resize', function() {
+   location.reload();
+});

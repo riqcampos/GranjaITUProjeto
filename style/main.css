@@ -32,10 +32,16 @@ html, body{
     margin-bottom: 3%;
     width: fit-content;
     border-bottom: #FFFFFF solid 1em;
+    animation: fade-in-up 0.7s ease-out 0.7s forwards;
 }
 
 .textDireita{
     margin-top: 25%;    
+}
+
+/* Define a opacidade inicial como 0 para os elementos que serão animados */
+.text1Main, .text2Main, .text3Main, .contactMainButton, .centerSection{
+    opacity: 0;
 }
 
 .text1Main{
@@ -45,6 +51,7 @@ html, body{
     text-shadow: 
         3px 3px 0px #FF7000;
     margin-bottom: max(-5vh, -20%);
+    animation: fade-in-up 1s ease-out 1s forwards;
 }
 
 .text2Main{
@@ -54,6 +61,7 @@ html, body{
     font-size: 500%;
     margin-top: auto;
     margin-bottom: 0%;
+    animation: fade-in-up 1s ease-out 0.8s forwards;
 }
 
 .text3Main{
@@ -64,6 +72,7 @@ html, body{
     margin-top: 31%;
     margin-left: 2%;
     margin-bottom: -4%;
+    animation: fade-in-up 1s ease-out 1s forwards;
 }
 
 .contactMainButton{
@@ -81,7 +90,7 @@ html, body{
     border: none;
     transition: 0.5s ease;
     margin-left: 10%;
-
+    animation: fade-in-up 0.8s ease-out 1.2s forwards;
 }
 .contactMainButton:hover{
     background-color: #ffd4ae;
@@ -90,6 +99,18 @@ html, body{
 }
 
 /*---------------------------------------Main Animation CSS---------------------------------------------*/
+
+/* Keyframe para a animação dos textos e botão subindo */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (max-width: 1500px) {
     #mainPage{

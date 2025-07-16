@@ -266,9 +266,11 @@
                 0.5em 0.5em 0.1em #0000005d;
             .titleProductsText{
                 color: #FF7700;
+                font-size: 1em;
             }
             .textProducts{
                 color: #582d09;
+                font-size: 0.8em;
             }
         }
     }
