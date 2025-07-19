@@ -210,6 +210,16 @@
 /*----------------------------------Badges Style----------------------------------*/
 .selos{
     margin-left: -10%;
+    margin-top: 5%;
+}
+
+#titleSelos{
+    font-family: 'Galada', cursive;
+    font-weight: 200;
+    color: #FFFFFF;
+    font-size: 3em;
+    margin-left: -10%;
+    margin-bottom: -5%;
 }
 
 #seloAVAL{
@@ -225,10 +235,42 @@
     transition: 0.3s ease-in-out;
 }
 
-#seloQIMA:hover, #seloAVAL:hover{
+#seloSISBI{
+    height: 10vh;
+    margin-left: 2em;
+    border-radius: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+#seloQIMA:hover, #seloAVAL:hover, #seloSISBI:hover{
     transform: scale(1.08);
 }
 
+@media (max-width: 1800px) {
+    #titleSelos{
+        margin-left: 5%;
+    }
+    
+    .selos{
+        margin-left: 5%;
+        margin-bottom: 20%;
+    }
+
+    #seloAVAL{
+        height: 7vh;
+        margin-right: 1em;
+    }  
+
+    #seloQIMA{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #seloSISBI{
+        height: 7vh;
+        margin-left: 1em;
+    }
+}
 /*------------------------------------------Image specificies------------------------------------------------*/
 
 @media (max-width: 1800px) {
