@@ -207,6 +207,28 @@
     }
 }
 
+/*----------------------------------Badges Style----------------------------------*/
+.selos{
+    margin-left: -10%;
+}
+
+#seloAVAL{
+    height: 10vh;
+    margin-right: 2em;
+    transition: 0.3s ease-in-out;
+}
+
+#seloQIMA{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+#seloQIMA:hover, #seloAVAL:hover{
+    transform: scale(1.08);
+}
+
 /*------------------------------------------Image specificies------------------------------------------------*/
 
 @media (max-width: 1800px) {
