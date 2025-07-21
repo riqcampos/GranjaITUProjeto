@@ -2,6 +2,7 @@
 #cultureValues{
     width: 100%;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .waveCulture{
@@ -105,7 +106,6 @@
     font-size: 1.3em;
     color: #582d09;
     line-height: 120%;
-    letter-spacing: 105%;
     margin-top: -5%;
     margin-bottom: 5%;
 }

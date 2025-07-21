@@ -1,15 +1,14 @@
 .fade-in-element {
-  opacity: 0;
-  transform: translateY(30px); /* Começa 30px abaixo da sua posição final */
-  transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(30px); /* Começa 30px abaixo da sua posição final */
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
 }
-
+    
 .fade-in-element.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Desativa as animações de fade-in em dispositivos móveis para melhor performance e experiência. */
 @media (max-width: 768px) {
   .fade-in-element {
     opacity: 1;
