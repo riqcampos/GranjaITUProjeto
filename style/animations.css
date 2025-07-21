@@ -8,3 +8,12 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Desativa as animações de fade-in em dispositivos móveis para melhor performance e experiência. */
+@media (max-width: 768px) {
+  .fade-in-element {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
