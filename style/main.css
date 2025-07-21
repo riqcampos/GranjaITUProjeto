@@ -3,15 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
 /*------------------------------------HTML and Body definitions--------------------------------*/
-html{
-    overflow-x: hidden;
-}
 
 html, body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 /*-------------------------------------------Main CSS---------------------------------------------------*/

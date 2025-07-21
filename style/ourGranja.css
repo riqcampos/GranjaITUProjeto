@@ -59,11 +59,11 @@
 
 #LeftBtn {
     margin-top: 22%;
-    margin-left: 1%;
+    left: 1%;
 }
 
 #RightBtn {
-    margin-left: 96%;
+    right: 1%;
     margin-top: 22%;
     rotate: 180deg;
 }

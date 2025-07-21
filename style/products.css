@@ -211,6 +211,8 @@
 .selos{
     margin-left: -10%;
     margin-top: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 #titleSelos{
@@ -335,6 +337,7 @@
             .textProducts{
                 color: #582d09;
                 font-size: 0.8em;
+                letter-spacing: normal;
             }
         }
     }
