@@ -217,6 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHamburgerMenu(hamburgerSticky, menuItensList);
 });
 
-window.addEventListener('resize', function() {
-   location.reload();
-});
+if (window.matchMedia('(min-width: 769px)').matches) {
+    window.addEventListener('resize', function() {
+        location.reload();
+    });
+}

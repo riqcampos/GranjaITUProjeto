@@ -164,7 +164,7 @@ header{
 /*-------------------------------------------Responsive Menu (Mobile)-----------------------------------*/
 @media (max-width: 1800px) {
     .menuItens {
-        position: fixed;
+        position: relative;
         display: flex;
         flex-direction: column;
         top: 0;
@@ -224,7 +224,7 @@ header{
     }
 
     .menuStickyItens {
-        display: none; /* Esconde o menu desktop */
+        display: none; 
         margin-left: 0;
     }
 
@@ -238,7 +238,6 @@ header{
     }
 
     /* Animação do Hamburger Sticky para 'X' */
-    .hamburger-sticky.active + .menuStickyItens { display: none; }
     .hamburger-sticky.active .bar-sticky:nth-child(2) { opacity: 0; }
     .hamburger-sticky.active .bar-sticky:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .hamburger-sticky.active .bar-sticky:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
