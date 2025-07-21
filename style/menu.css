@@ -167,7 +167,7 @@ header{
         position: fixed;
         display: flex;
         flex-direction: column;
-        top: 10%;
+        top: 0;
         justify-content: center;
         align-items: center;
         gap: 2rem;

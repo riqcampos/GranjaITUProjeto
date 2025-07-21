@@ -9,7 +9,7 @@ html, body{
     padding: 0;
     scroll-behavior: smooth;
     background-color: #FFFFFF;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*-------------------------------------------Main CSS---------------------------------------------------*/
