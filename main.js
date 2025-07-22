@@ -219,9 +219,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-if (window.matchMedia('(min-width: 769px)').matches) {
-    window.addEventListener('resize', function() {
-        location.reload();
-    });
-}
