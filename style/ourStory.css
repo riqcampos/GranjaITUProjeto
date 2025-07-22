@@ -76,7 +76,7 @@
 
 /*------------------------------Animações e transicoes para o OurHistory--------------------------------*/
 
-@media(hover: hover){
+@media(min-width: 1500px){
     .imagesOurHistory:hover{
         transform: scale(1.03);
     }

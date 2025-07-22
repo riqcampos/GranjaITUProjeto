@@ -71,10 +71,11 @@
 
 /*------------------------------Animações e transicoes para o Carousel----------------------------------*/
 
-.buttonCarrousel:hover{
-    transform: scale(1.1);
+@media (min-width: 1500px){
+    .buttonCarrousel:hover{
+        transform: scale(1.1);
+    }
 }
-
 /*------------------------------Responsivity para o Carousel----------------------------------*/
 
 @media (max-width: 1500px){

@@ -45,7 +45,7 @@
 
 /*------------------------------------------Tasting Animation CSS------------------------------------*/
 
-@media (hover:hover){
+@media (min-width: 1500px){
     section>img:hover{
         transform: scale(1.03);
     }

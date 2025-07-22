@@ -72,14 +72,16 @@ header{
     }
 }
 
-@media (hover: hover){
+@media (min-width: 1500px) {
     .Amenu:hover{
         color: #FFd4ae;
         text-shadow: 
             4px 4px 0px #FF7000;
     }
-
     #logo:hover{
+        transform: scale(1.05);
+    }
+    .itemMenuSticky:hover{
         transform: scale(1.05);
     }
 }
@@ -132,13 +134,6 @@ header{
     margin-left: 10%;
     transition: 0.3s ease-in-out;
 }
-
-/*-------------------------------------------Menu Animation CSS-----------------------------------------*/
-
-.itemMenuSticky:hover{
-    transform: scale(1.05);
-}
-
 /*-------------------------------------------Hamburger Menu CSS-----------------------------------------*/
 .hamburger, .hamburger-sticky {
     display: none;
@@ -202,13 +197,6 @@ header{
 
     .Amenu { 
         font-size: 1.5rem;
-        color: #FFFFFF;
-    }
-
-    .Amenu:hover{
-        transform: scale(1.03);
-        text-shadow: 
-            4px 4px 0px #FF7000;
         color: #FFFFFF;
     }
 

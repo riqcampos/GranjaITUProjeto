@@ -172,7 +172,7 @@
 
 /*------------------------------Animações e transicoes para o Products----------------------------------*/
 
-@media (hover: hover){
+@media (min-width: 1500px){
     .productItem:hover{
         background-color: #fd9f4d;
         color: #FFFFFF;

@@ -94,10 +94,14 @@ body{
     margin-left: 10%;
     animation: fade-in-up 0.8s ease-out 1.2s forwards;
 }
-.contactMainButton:hover{
-    background-color: #ffd4ae;
-    color: #FB7500;
-    transform: scale(1.1);
+
+/* Efeito de hover apenas para dispositivos com mouse */
+@media (min-width: 1500px) {
+    .contactMainButton:hover{
+        background-color: #ffd4ae;
+        color: #FB7500;
+        transform: scale(1.1);
+    }
 }
 
 /*---------------------------------------Main Animation CSS---------------------------------------------*/

@@ -47,7 +47,7 @@
 
 /*--------------------------------Animações e transições Coworkers CSS----------------------------------*/
 
-@media(hover: hover){
+@media(min-width: 1500px){
     .coworkerImage:hover{
         transform: scale(1.02);
     }

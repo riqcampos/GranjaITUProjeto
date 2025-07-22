@@ -79,8 +79,10 @@
 
 /*------------------------------------Animações recipes css--------------------------------------*/
 
-.borderRecipe:hover{
-    transform: scale(1.02);
+@media (min-width: 1500px){
+    .borderRecipe:hover{
+        transform: scale(1.02);
+    }
 }
 
 /*----------------------------------PreDisplay for recipes css-----------------------------------*/

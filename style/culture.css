@@ -124,7 +124,7 @@
 
 /*------------------------------Animações e transicoes para o Culture-----------------------------------*/
 
-@media (hover: hover){
+@media (min-width: 1500px){
     .imageCulture:hover{
         transform: scale(1.05);
     }
