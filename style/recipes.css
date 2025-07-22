@@ -94,7 +94,7 @@
     background-image: linear-gradient(-200deg,#FF7000, #000dc498);
     width: 90%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 3%;
     transition: 0.5s ease-in-out;
 
     .titlePreHover{

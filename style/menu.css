@@ -10,7 +10,6 @@ header{
     display: flex;
     top: 0;
     z-index: 1;
-    animation: slide-down 1s ease-out forwards;
 }
 
 #logo{
@@ -54,6 +53,13 @@ header{
 
 /*-------------------------------------------Menu Animation CSS-----------------------------------------*/
 
+/* A animação só se aplica a telas maiores onde o menu hamburguer não é usado */
+@media (min-width: 1801px) {
+    .menu {
+        animation: slide-down 1s ease-out forwards;
+    }
+}
+
 /* Keyframe para a animação do menu descendo */
 @keyframes slide-down {
     from {
@@ -66,14 +72,16 @@ header{
     }
 }
 
-.Amenu:hover{
-    color: #FFd4ae;
-    text-shadow: 
-        4px 4px 0px #FF7000;
-}
+@media (hover: hover){
+    .Amenu:hover{
+        color: #FFd4ae;
+        text-shadow: 
+            4px 4px 0px #FF7000;
+    }
 
-#logo:hover{
-    transform: scale(1.05);
+    #logo:hover{
+        transform: scale(1.05);
+    }
 }
 
 /*-------------------------------------------Menu Sticky CSS-----------------------------------------*/
@@ -177,6 +185,7 @@ header{
         height: 100vh;
         left: -115%;
         margin: 0;
+        z-index: 1004; /* Garante que o menu fique sobre o conteúdo e o menu sticky */
         transition: 1s ease-in-out;
     }
 

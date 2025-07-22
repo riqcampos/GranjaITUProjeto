@@ -45,8 +45,10 @@
 
 /*------------------------------------------Tasting Animation CSS------------------------------------*/
 
-section>img:hover{
-    transform: scale(1.03);
+@media (hover:hover){
+    section>img:hover{
+        transform: scale(1.03);
+    }
 }
 
 /*------------------------------------------Tasting Responsivity CSS---------------------------------*/

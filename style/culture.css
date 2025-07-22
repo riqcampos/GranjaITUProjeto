@@ -124,8 +124,10 @@
 
 /*------------------------------Animações e transicoes para o Culture-----------------------------------*/
 
-.imageCulture:hover{
-    transform: scale(1.05);
+@media (hover: hover){
+    .imageCulture:hover{
+        transform: scale(1.05);
+    }
 }
 
 /*------------------------------Responsivity for Culture------------------------------------------------*/

@@ -172,38 +172,40 @@
 
 /*------------------------------Animações e transicoes para o Products----------------------------------*/
 
-.productItem:hover{
-    background-color: #fd9f4d;
-    color: #FFFFFF;
-    transform: scale(1.03);
-}
-
-.curentProduct:hover{
-    transform: scale(1.03);
-}
-
-.productSelected:hover{
-    transform: scale(1.05);
-}
-
-.cardProducts:hover{
-    transform: scale(1.03);
-    section{
-        background-color: #FFFFFF;
-        border-radius: 0.5em;
-        padding: 1%;
-        box-shadow: 
-            0.5em 0.5em 0.1em #0000005d;
-        .titleProductsText{
-            color: #FF7700;
-        }
-        .textProducts{
-            color: #582d09;
-        }
+@media (hover: hover){
+    .productItem:hover{
+        background-color: #fd9f4d;
+        color: #FFFFFF;
+        transform: scale(1.03);
     }
-    .imageProducts{
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 1em;
+
+    .curentProduct:hover{
+        transform: scale(1.03);
+    }
+
+    .productSelected:hover{
+        transform: scale(1.05);
+    }
+
+    .cardProducts:hover{
+        transform: scale(1.03);
+        section{
+            background-color: #FFFFFF;
+            border-radius: 0.5em;
+            padding: 1%;
+            box-shadow: 
+                0.5em 0.5em 0.1em #0000005d;
+            .titleProductsText{
+                color: #FF7700;
+            }
+            .textProducts{
+                color: #582d09;
+            }
+        }
+        .imageProducts{
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 1em;
+        }
     }
 }
 
@@ -244,8 +246,10 @@
     transition: 0.3s ease-in-out;
 }
 
-#seloQIMA:hover, #seloAVAL:hover, #seloSISBI:hover{
-    transform: scale(1.08);
+@media(hover: hover){
+    #seloQIMA:hover, #seloAVAL:hover, #seloSISBI:hover{
+        transform: scale(1.08);
+    }
 }
 
 @media (max-width: 1800px) {

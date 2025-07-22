@@ -87,7 +87,7 @@ footer{
 
 /*-------------------------------Responsivity para o Footer---------------------------------------------*/
 
-@media(max-width:1500px){
+@media(max-width:1300px){
     .contatoFooter strong{
         font-size: 1.5em;
     }

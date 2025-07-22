@@ -134,14 +134,16 @@
 
 /*-------------------------------Animações e transicoes para o Contact----------------------------------*/
 
-.socialMidiaIcon:hover{
-    transform: scale(1.1);
-}
+@media (hover: hover){
+    .socialMidiaIcon:hover{
+        transform: scale(1.1);
+    }
 
-.form button:hover{
-    background-color: #ffd4ae;
-    color: #FB7500;
-    transform: scale(1.03);
+    .form button:hover{
+        background-color: #ffd4ae;
+        color: #FB7500;
+        transform: scale(1.03);
+    }
 }
 
 /*-------------------------------Responsivity para o Contact--------------------------------------------*/
