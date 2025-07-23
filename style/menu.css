@@ -92,6 +92,8 @@ header{
     position: fixed;
     top:0;
     left: 0;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to right, #fcc49a, #FF7000);
     width: 100%;
     z-index: 1002;
@@ -166,7 +168,6 @@ header{
 
 /*-------------------------------------------Responsive Menu (Mobile)-----------------------------------*/
 @media (max-width: 1800px) {
-
     .menuItens {
         position: fixed;
         display: flex;
@@ -178,14 +179,17 @@ header{
         backdrop-filter: blur(5px);
         width: 100%;
         height: 100vh;
-        left: -115%;
+        left: 0;
+        transform: translateX(-100%);
         margin: 0;
-        z-index: 1004; /* Garante que o menu fique sobre o conteúdo e o menu sticky */
+        z-index: 1004; 
         transition: 1s ease-in-out;
     }
 
     .menuItens.active {
         left: 0;
+        transform: translateX(0);
+        transition: 1s ease-in-out;
     }
 
     .itemMenu { 
@@ -214,13 +218,15 @@ header{
 
     /* --- Sticky Menu --- */
     .menuStickyContent {
+        width: 100%;
+        box-sizing: border-box; /* Força o padding a ser calculado para dentro da largura total */
         justify-content: space-between;
         align-items: center;
         padding: 0 5%;
     }
 
     .menuStickyItens {
-        display: none; /* Esconde o menu desktop */
+        display: none;
         margin-left: 0;
     }
 

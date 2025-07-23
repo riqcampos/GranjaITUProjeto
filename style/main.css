@@ -4,6 +4,17 @@
 
 /*------------------------------------HTML and Body definitions--------------------------------*/
 
+/*
+  Melhor prática para um dimensionamento de caixa mais intuitivo.
+  Isso evita que padding e border afetem a largura final dos elementos.
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 html, body{
     margin: 0%;
     padding: 0%;
