@@ -1,24 +1,26 @@
 /*-------------------------------------------Menu CSS-----------------------------------------*/
 
-header{
+.header{
     display: flex;
-    position: inherit;
+    position: relative;
+    align-items: center;
+    margin-bottom: -13%;
 }
 
 .menu{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     z-index: 1;
 }
 
 #logo{
-    width: 18%;
-    margin-left: 6%;
-    margin-top: 1%;
-    display: flex;
+    width: 20%;
     z-index: 0;
     transition: 0.3s ease-in-out;
+    margin-left: 5%;
 }
 
 #wave{
@@ -28,10 +30,9 @@ header{
 }
 
 .menuItens{
-    position: absolute;
+    list-style-type: none;
     text-decoration: none;
-    margin-left: 40%;
-    margin-top: 6%;
+    margin-right: 5%;
 }
 
 .itemMenu{
@@ -88,37 +89,43 @@ header{
 
 /*-------------------------------------------Menu Sticky CSS-----------------------------------------*/
 
-#menuSticky{
+.menuSticky{
     position: fixed;
-    top:0;
+    top: 0; 
     left: 0;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(to right, #fcc49a, #FF7000);
     width: 100%;
     z-index: 1002;
     box-shadow: 
         0 0.5vh 1vh rgba(0,0,0,0.2);
-    transition: 0.5s ease-in-out;
+    /* O menu começa escondido acima da tela e invisível */
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Quando o JS adiciona a classe .active, o menu desliza para a visão */
+.menuSticky.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .menuStickyContent{
     display: flex;
-    transition: 0.5s ease-in-out;
-    position: relative;
+    justify-content: space-between; /* Alinha logo e itens */
+    align-items: center;
 }
 
 .menuStickyItens{
     display: flex;
-    align-items: center;
-    margin-left: 30%;
     list-style-type: none;
-    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    margin-right: 15%;
 }
 
 .itemMenuSticky{
-    margin-left: 10%;
     transition: 0.6s ease-in-out;
+    margin-left: 5%;
 }
 
 .AmenuSticky{
@@ -131,9 +138,8 @@ header{
 }
 
 #logoSticky{
-    width: 4%;
-    margin: 0.5%;
-    margin-left: 10%;
+    width: clamp(50px, 4%, 70px); /* Tamanho responsivo com limites */
+    margin-left: 5%;
     transition: 0.3s ease-in-out;
 }
 /*-------------------------------------------Hamburger Menu CSS-----------------------------------------*/
@@ -168,6 +174,10 @@ header{
 
 /*-------------------------------------------Responsive Menu (Mobile)-----------------------------------*/
 @media (max-width: 1800px) {
+    .header{
+        margin-top: 0%;
+    }
+
     .menuItens {
         position: fixed;
         display: flex;
@@ -207,7 +217,7 @@ header{
     .hamburger {
         display: block;
         position: absolute;
-        top: 5%;
+        top: 10%;
         right: 6%;
     }
 
@@ -219,10 +229,10 @@ header{
     /* --- Sticky Menu --- */
     .menuStickyContent {
         width: 100%;
-        box-sizing: border-box; /* Força o padding a ser calculado para dentro da largura total */
+        box-sizing: border-box;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5%;
+        padding: 0 2%;
     }
 
     .menuStickyItens {
@@ -231,13 +241,14 @@ header{
     }
 
     #logoSticky {
-        margin: 0.5% 0;
-        width: 5vh;
+        margin-left: 5%;
+        width: clamp(40px, 5vh, 50px);
     }
 
     .hamburger-sticky {
         display: block;
         position: relative;
+        right: 6%;
     }
 
     /* Animação do Hamburger Sticky para 'X' */
