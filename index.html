@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="./style/animations.css">
     <link rel="stylesheet" href="./style/slogan.css">
     <link rel="shortcut icon" href="./images/mainStructure/iconeSiteGalinhas.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100..900;1,100..900&family=Galada&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--    
@@ -35,10 +39,10 @@
             <ul class="menuItens" id="menuItensList">
                 <li class="itemMenu"><a class="Amenu" href="#mainPage">HOME</a></li>
                 <li class="itemMenu"><a class="Amenu" href="#products">PRODUTOS</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#jumpOurStory">HISTORIA</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#jumpTasting">EVENTOS</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#jumpRecipes">RECEITAS</a></li>
-                <li class="itemMenu"><a class="Amenu" href="#jumpContact">CONTATO</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#ourStory">HISTÓRIA</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#tasting">EVENTOS</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#recipes">RECEITAS</a></li>
+                <li class="itemMenu"><a class="Amenu" href="#contact">CONTATO</a></li>
             </ul>
         </div>
     </div>
@@ -53,10 +57,10 @@
             <ul class="menuStickyItens" id="menuStickyItensList">
                 <li class="itemMenuSticky"><a class="AmenuSticky" href="#mainPage">HOME</a></li>
                 <li class="itemMenuSticky"><a class="AmenuSticky" href="#products">PRODUTOS</a></li>
-                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpOurStory">HISTORIA</a></li>
-                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpTasting">EVENTOS</a></li>
-                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpRecipes">RECEITAS</a></li>
-                <li class="itemMenuSticky"><a class="AmenuSticky" href="#jumpContact">CONTATO</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#ourStory">HISTÓRIA</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#tasting">EVENTOS</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#recipes">RECEITAS</a></li>
+                <li class="itemMenuSticky"><a class="AmenuSticky" href="#contact">CONTATO</a></li>
             </ul>
         </div>
     </div>
@@ -131,12 +135,12 @@
         <div class="sloganContent">
 
         </div>
-        <img src="./images/mainStructure/telaQuemSomosOnda.svg" class="waveProductsDown" alt="" id="jumpOurStory">
+        <img src="./images/mainStructure/telaQuemSomosOnda.svg" class="waveProductsDown" alt="">
     </div>
     <!--
         OurStory Page
     -->
-
+    
     <div id="ourStory">
         <div class="ourStoryContent">
             <img src="./images/mainStructure/FotoGranjaAltair.jpg" class="imagesOurHistory" alt="Foto histórica da granja">
@@ -179,7 +183,7 @@
                         </ul>
                     </div>
                     <div>
-                        <img src="./images/products/6-1.png" alt="Embalagem com 06 ovos" class="productSelected" id="6">
+                        <img src="./images/products/6-1.png" alt="Embalagem com 06 ovos" class="productSelected" id="img6">
                         <h1 id="titleSelos">Certifições</h1>
                         <div class="selos">
                             <a href="./images/selos/declaracaoAVAL.pdf" target="_blank"><img src="./images/selos/seloAVAL.png" id="seloAVAL"></a>
@@ -287,7 +291,6 @@
     <!---
         Tasting page
     -->
-    <div id="jumpTasting"></div>
     <div id="tasting" class="fade-in-element">
         <div class="tastingContent">
             <p class="titleTastings">Eventos</p>
@@ -306,7 +309,6 @@
     <!--
         Recipes page
     --> 
-    <div id="jumpRecipes"></div>
     <div id="recipes" class="fade-in-element">
         <div class="recipesContent">
             <p class="titleRecipes">Receitas</p>
@@ -484,7 +486,6 @@
     <!--
         Contact page
     --> 
-    <div id="jumpContact"></div>
     <div id="contact" class="fade-in-element">
         <div class="contactContent">
             <h1 class="contactTitle">Contato</h1>
@@ -560,6 +561,6 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
