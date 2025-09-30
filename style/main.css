@@ -1,6 +1,7 @@
 /*---------------------------------------Importing fonts used----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/hamster-2');
 
 /*------------------------------------HTML and Body definitions--------------------------------*/
 
@@ -36,67 +37,80 @@ html, body{
 .centerSection{
     display: flex;
     margin-left: 10%;
-    margin-bottom: 3%;
     width: fit-content;
-    border-bottom: #FFFFFF solid 1em;
     animation: fade-in-up 0.7s ease-out 0.7s forwards;
 }
 
-.textDireita{
-    margin-top: 25%;    
+.upperTextCenterSection{
+    display: flex;
+    margin-top: 35%;
 }
 
 /* Define a opacidade inicial como 0 para os elementos que serão animados */
-.text1Main, .text2Main, .text3Main, .contactMainButton, .centerSection{
+.text1Main, .text2Main, .text3Main,.text4Main , .contactMainButton, .centerSection{
     opacity: 0;
 }
 
 .text1Main{
     color: #FFFFFF;
     font-family: 'Galada', cursive;
-    font-size: 6em;
+    font-size: 7em;
+    margin: 0;
+    margin-bottom: -15%;
     text-shadow: 
         3px 3px 0px #FF7000;
-    margin-bottom: max(-5vh, -20%);
     animation: fade-in-up 1s ease-out 1s forwards;
 }
 
 .text2Main{
     color:#FFFFFF;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: Bolder;
-    font-size: 500%;
-    margin-top: auto;
-    margin-bottom: 0%;
+    font-size: 5.8em;
+    font-weight: 1000;
+    margin: 0;
+    text-shadow: 
+        0px 0px 0px #FF7000;
     animation: fade-in-up 1s ease-out 0.8s forwards;
 }
 
 .text3Main{
-    color: #FFFFFF;
-    font-family: 'Fira Sans', sans-serif;
+    color: #FF7000;
+    font-family: 'Hamster', sans-serif;
     font-weight: 1000;
-    font-size: clamp(1em, 40vh,1400%);
-    margin-top: 31%;
+    font-size: clamp(1em, 70vh, 20em);
+    text-align: center;
+    margin: 0;
+    margin-top: -5%;
     margin-left: 2%;
-    margin-bottom: -4%;
+    text-shadow: 
+        5px 5px 0px #ffffff;
     animation: fade-in-up 1s ease-out 1s forwards;
 }
 
+.text4Main{
+    color: #FFFFFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 2.3em;
+    animation: fade-in-up 1s ease-out 1s forwards;
+    margin: 0;
+    margin-top: -5%;
+    border-bottom: #FFFFFF solid 0.3em;
+}
+
 .contactMainButton{
-    width: max(14%, 15vw);
+    width: max(40%, 30vw);
     height: 5%;
     background-color: #FB7500;
-    margin-left: 10%;
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
     font-size: 150%;
     text-decoration: none;
     padding: 1%;
-    border-radius: 1em;
+    border-radius: 0.5em;
     border: none;
     transition: 0.5s ease;
-    margin-left: 10%;
     animation: fade-in-up 0.8s ease-out 1.2s forwards;
 }
 
