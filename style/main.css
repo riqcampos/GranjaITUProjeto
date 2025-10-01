@@ -43,7 +43,7 @@ html, body{
 
 .upperTextCenterSection{
     display: flex;
-    margin-top: 35%;
+    margin-top: 45%;
 }
 
 /* Define a opacidade inicial como 0 para os elementos que serão animados */
@@ -69,21 +69,21 @@ html, body{
     font-weight: 1000;
     margin: 0;
     text-shadow: 
-        0px 0px 0px #FF7000;
+        3px 3px 3px #0000007a;
     animation: fade-in-up 1s ease-out 0.8s forwards;
 }
 
 .text3Main{
-    color: #FF7000;
-    font-family: 'Hamster', sans-serif;
+    color: #ffffff;
+    font-family: 'Galada', cursive;
     font-weight: 1000;
-    font-size: clamp(1em, 70vh, 20em);
+    font-size: clamp(1em, 70vh, 13em);
     text-align: center;
     margin: 0;
-    margin-top: -5%;
     margin-left: 2%;
+    margin-top: -5%;
     text-shadow: 
-        5px 5px 0px #ffffff;
+        5px 5px 0px #ff7000;
     animation: fade-in-up 1s ease-out 1s forwards;
 }
 
@@ -91,11 +91,13 @@ html, body{
     color: #FFFFFF;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
-    font-size: 2.3em;
+    font-size: 2em;
     animation: fade-in-up 1s ease-out 1s forwards;
     margin: 0;
-    margin-top: -5%;
+    margin-top: -6%;
     border-bottom: #FFFFFF solid 0.3em;
+    text-shadow: 
+        3px 3px 3px #0000007a;
 }
 
 .contactMainButton{
@@ -145,15 +147,10 @@ html, body{
 
     .centerSection{
         flex-direction: column;
-        border-bottom: #FFFFFF solid 0.5em;
-    }
-
-    .textDireita{
-        margin-top: 20%;
+        margin-left: 5%;
     }
 
     .text1Main{
-        margin-bottom: max(-25%, -5vh);
         font-size: 4em;
     }
 
@@ -162,9 +159,11 @@ html, body{
     }
 
     .text3Main{
-        font-size: 450%;
-        margin-left: 0%;
-        margin-top: max(-10%, -3vh);
+        font-size: 7em;
+        margin-left: 2%;
+    }
+    .text4Main{
+        font-size: 1.1em;
     }
 
     .contactMainButton{
