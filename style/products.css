@@ -143,10 +143,10 @@
     margin-top: 5%;
     margin: 2%;
     height: 4em;
+    padding: 1%;
     width: 4em;
-    border-radius: 1em;
-    border: #ffa95e solid 0.2em;
-    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
     transition: 0.5s ease-in-out;
 }
 
@@ -169,7 +169,6 @@
     margin-top: -3%;
     margin-bottom: 5%;
     margin-left: 2%;
-    margin-right: 10%;
     transition: 0.5s ease-in-out;
 }
 
@@ -213,24 +212,31 @@
 }
 
 /*----------------------------------Badges Style----------------------------------*/
+.certifications{
+    margin-top: 10%;
+}
+
 .selos{
     margin-top: 5%;
     margin-left: 10%;
     max-width: fit-content;
     box-sizing: border-box;
-    border: #fffffff6 0.6em solid;
-    box-shadow: #FF7700 0.3em 0.3em 0.1em;
     border-radius: 1em;
-    padding: 2%;
+    padding: 10%;
+    background-image: url(../images/selos/fundoCertificacoes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #titleSelos{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
-    color: #FFFFFF;
+    color: #FF7000;
     font-size: 2em;
-    margin-bottom: -5%;
-    margin-left: 15%;
+    margin-bottom: -13%;
+    margin-left: 20%;
     text-shadow:
         3px 3px 0px #00000042;
 }
@@ -263,12 +269,14 @@
 
 @media (max-width: 1800px) {
     #titleSelos{
-        margin-left: 5%;
+        margin-left: 10%;
     }
     
     .selos{
         margin-left: 5%;
         margin-bottom: 20%;
+        padding-left: 13%;
+        padding-right: 13%;
     }
 
     #seloAVAL{
@@ -332,10 +340,12 @@
     .imageProducts{
         height: 3em;
         width: 3em;
-        background-color: #ffffff71;
+        background-color: #ffffff;
+        border: #FF7000 solid 0.2em;
     }
 
     .cardProducts{
+        margin-left: 5%;
         section{
             background-color: #FFFFFF;
             border-radius: 0.5em;
