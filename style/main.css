@@ -153,6 +153,10 @@ html, body{
         margin-left: 5%;
     }
 
+    .upperTextCenterSection{
+        display: block;
+    }
+
     .text1Main{
         font-size: 4em;
     }
