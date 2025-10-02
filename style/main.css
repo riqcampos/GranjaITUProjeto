@@ -60,6 +60,10 @@ html, body{
     text-shadow: 
         3px 3px 0px #FF7000;
     animation: fade-in-up 1s ease-out 1s forwards;
+    n{
+        text-shadow: 
+            3px 3px 3px #0000007a;
+    };
 }
 
 .text2Main{
