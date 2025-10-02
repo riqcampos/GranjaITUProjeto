@@ -50,16 +50,20 @@
     display: flex;
 }
 
+.leftPartUpper{
+    display: flex;
+}
+
 .productSelected{
-    width: 75vh;
-    height: 75vh;
+    width: 80vh;
+    height: 80vh;
     transform: rotate(15deg) scale(1);
     z-index: 3;
     opacity: 1;
     transition: all 0.5s ease-in-out;
     border-radius: 20%;
     z-index: 0;
-    margin-left: 25%;
+    margin-left: 40%;
 }
 
 /*------------------------------------------Image specificities------------------------------------------------*/
@@ -76,7 +80,6 @@
 }
 
 .productList{
-    display: flex;
     li{ 
         margin-left: 3%;
     }
@@ -145,7 +148,7 @@
     height: 4em;
     padding: 1%;
     width: 4em;
-    border-radius: 50%;
+    border-radius: 1em;
     background-color: rgb(255, 255, 255);
     transition: 0.5s ease-in-out;
 }
@@ -214,48 +217,48 @@
 /*----------------------------------Badges Style----------------------------------*/
 .certifications{
     margin-top: 10%;
-}
-
-.selos{
-    margin-top: 5%;
-    margin-left: 10%;
-    max-width: fit-content;
-    box-sizing: border-box;
-    border-radius: 1em;
-    padding: 10%;
+    padding-top: 1%;
     background-image: url(../images/selos/fundoCertificacoes.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 
+.selos{
+    margin-top: 5%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 10%;
+}
+
 #titleSelos{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 1000;
-    color: #FF7000;
+    color: #ff7000;
     font-size: 2em;
-    margin-bottom: -13%;
+    margin-bottom: -10%;
     margin-left: 20%;
     text-shadow:
-        3px 3px 0px #00000042;
+        2px 2px 0px #ff6f005e;
 }
 
 #seloAVAL{
-    height: 8vh;
+    height: 9vh;
     margin-right: 2em;
     transition: 0.3s ease-in-out;
 }
 
 #seloQIMA{
-    width: 8vh;
-    height: 8vh;
+    width: 9vh;
+    height: 9vh;
     border-radius: 1em;
     transition: 0.3s ease-in-out;
 }
 
 #seloSISBI{
-    height: 8vh;
+    height: 9vh;
     margin-left: 2em;
     border-radius: 1em;
     transition: 0.3s ease-in-out;
@@ -309,6 +312,10 @@
     .productsFullContent{ 
         flex-direction: column;
     }
+
+    .leftPartUpper{
+        display: block;
+    }   
 
     .productList{
         display: flex;
