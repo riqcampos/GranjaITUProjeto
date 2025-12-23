@@ -40,6 +40,10 @@
             height: 30em;
             width: 60%;
         };
+        #PrimeiraCliente{
+            width: 90%;
+            height: 35em;
+        }
     };
 }
 
